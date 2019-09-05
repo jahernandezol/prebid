@@ -39,6 +39,16 @@
             }];
 
             pbjs.que.push(function() {
+
+              pbjs.setConfig({
+                  debugging: {
+                    enabled: true,
+                    bids: [{
+                      cpm: 5
+                    }]
+                  }
+                  });
+
                 pbjs.addAdUnits(adUnits);
                 pbjs.requestBids({
                     bidsBackHandler: initAdserver
