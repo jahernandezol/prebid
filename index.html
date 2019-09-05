@@ -89,10 +89,12 @@
                 ];
 
                 pbjs.setConfig({
-                    debug: true,
-                    cache: {
-                        url: false
-                    },
+                  debugging: {
+                    enabled: true,
+                    bids: [{
+                      cpm: 5
+                    }]
+                  }
                 });
 
                 pbjs.addAdUnits(adUnits);
