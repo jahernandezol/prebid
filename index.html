@@ -30,6 +30,10 @@
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
 
+            googletag.cmd.push(function() {
+              googletag.pubads().disableInitialLoad();
+            });
+
             var PREBID_TIMEOUT = 1000;
             var FAILSAFE_TIMEOUT = 3000;
 
@@ -130,7 +134,6 @@
                         'div-banner-outstream-native'
                     )
                     .addService(googletag.pubads()).setTargeting("position", "atf").setTargeting("cType","home");
-                googletag.pubads().disableInitialLoad();
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
