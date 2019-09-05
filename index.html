@@ -1,0 +1,157 @@
+<html>
+    <head>
+        <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+        <script async src="//acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
+        <meta charset="utf-8">
+
+        <script>
+          var desktopSizes = [
+                [300, 250],
+                [300, 600]
+            ];
+            var tabletSizes = [
+                [300, 250]
+            ];
+            var phoneSizes = [
+                [320, 100],
+                [320, 50],
+                [300, 250]
+            ];
+            var allSizes = [
+                [320, 100],
+                [320, 50],
+                [300, 600],
+                [300, 250]
+            ];
+
+						var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+
+            var pbjs = pbjs || {};
+            pbjs.que = pbjs.que || [];
+
+            var PREBID_TIMEOUT = 1000;
+            var FAILSAFE_TIMEOUT = 3000;
+
+            function initAdserver() {
+                if (pbjs.initAdserverSet) return;
+
+                googletag.cmd.push(function() {
+                    pbjs.que.push(function() {
+                        pbjs.setTargetingForGPTAsync();
+                        googletag.pubads().refresh();
+                    });
+                });
+
+                pbjs.initAdserverSet = true;
+            }
+
+            setTimeout(initAdserver, PREBID_TIMEOUT);
+
+            pbjs.que.push(function() {
+                var adUnits = [{
+                        code: 'slot1',
+                        mediaTypes: {
+                            banner: {
+                                sizes: [
+                                    allSizes
+                                ]
+                            },
+                            native: {
+                                type: 'image'
+                            },
+                            video: {
+                                context: 'outstream',
+                                playerSize: [300,250]
+                            },
+                        },
+                        bids: [{
+                            		bidder: 'appnexus',
+                            			params: {
+                                		placementId: 16805653
+                            			}
+                            	},
+                            	{
+                            		bidder: 'smartadserver',
+                            		params: {
+                                		siteId: 317378,
+                                    pageId: 1139180,
+                                    formatId: 82776,
+                                    domain: 'https://prg.smartadserver.com'
+                            		}
+                               }
+                              ]
+                }
+                ];
+
+                pbjs.setConfig({
+                    debug: true,
+                    cache: {
+                        url: false
+                    },
+                });
+
+                pbjs.addAdUnits(adUnits);
+
+               pbjs.setConfig({
+                    sizeConfig: [{
+                        'mediaQuery': '(min-width: 1025px)',
+                        'sizesSupported': desktopSizes,
+                        'labels': ['desktop']
+                    }, {
+                        'mediaQuery': '(min-width: 768px) and (max-width: 1024px)',
+                        'sizesSupported': tabletSizes,
+                        'labels': ['tablet']
+                    }, {
+                        'mediaQuery': '(min-width: 320px) and (max-width: 812px)',
+                        'sizesSupported': phoneSizes,
+                        'labels': ['phone']
+                    }]
+                });
+
+                pbjs.requestBids({
+                    bidsBackHandler: function(bidResponses) {
+                        initAdserver();
+                    }
+                });
+            });
+
+        </script>
+
+        <script>
+            googletag.cmd.push(function() {
+                googletag
+                    .defineSlot(
+                        '/1977334/home/content1', [
+                            [1, 1],
+                            [300, 250],
+                            [360, 360]
+                        ],
+                        'div-banner-outstream-native'
+                    )
+                    .addService(googletag.pubads()).setTargeting("position", "atf").setTargeting("cType","home");
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <h2>Prebid Multi-Format Testing</h2>
+
+        <h3>div-banner-outstream-native</h3>
+        <div id='div-banner-outstream-native'>
+            <p>No response</p>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.display('div-banner-outstream-native');
+                });
+
+            </script>
+        </div>
+        <div></div>
+    </body>
+
+</html>
