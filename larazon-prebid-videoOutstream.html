@@ -3,7 +3,7 @@
     <head>
         <link rel="icon" type="image/png" href="/favicon.png">
         <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
-        <script async src="//jahernandezol.github.io/prebid/prebid2.31.0.js"></script>
+        <script async src="//jahernandezol.github.io/prebid/prebid2.31.0Appnexus.js"></script>
         <meta charset="utf-8" />
         <title>Prebid.js Outstream DFP Demo</title>
         <script>
@@ -22,6 +22,15 @@
                     video: {
                         playerSize: [640, 480],
                         context: 'outstream'
+                    }
+                },
+                renderer: {
+                    url: 'http://acdn.adnxs.com/video/outstream/ANOutstreamVideo.js',
+                    render: function (bid) {
+                        ANOutstreamVideo.renderAd({
+                            targetId: bid.adUnitCode,
+                            adResponse: bid.adResponse,
+                        });
                     }
                 },
                 bids: [
