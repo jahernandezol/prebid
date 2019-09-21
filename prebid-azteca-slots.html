@@ -1,0 +1,128 @@
+
+<html>
+
+    <head>
+        <title>Individual Ad Unit Refresh Example</title>
+        <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
+        <script async src="//acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
+        <script>
+            var sizes = [
+                [300, 250]
+            ];
+            var PREBID_TIMEOUT = 5000;
+
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+
+            var pbjs = pbjs || {};
+            pbjs.que = pbjs.que || [];
+
+            var adUnits = [{
+                code: '/19968336/header-bid-tag-0',
+                mediaTypes: {
+                    banner: {
+                        sizes: sizes
+                    }
+                },
+                bids: [{
+                    bidder: 'appnexus',
+                    params: {
+                        placementId: 16684121
+                    }
+                }]
+            }];
+
+            pbjs.que.push(function() {
+                pbjs.addAdUnits(adUnits);
+            });
+
+        </script>
+
+        <script>
+        // Function to generate unique names for slots
+        var nextSlotId = 1;
+        function generateNextSlotName() {
+        var id = nextSlotId++;
+        return 'adslot' + id;
+        }
+
+
+        function refreshBid() {
+            // Generate next slot name
+            var slotName = generateNextSlotName();
+
+            var adUnits = [{
+                code: slotName,
+                mediaTypes: {
+                    banner: {
+                        sizes: sizes
+                    }
+                },
+                bids: [{
+                    bidder: 'appnexus',
+                    params: {
+                        placementId: 13144370
+                    }
+                }]
+            }];
+
+            pbjs.que.push(function() {
+                pbjs.addAdUnits(adUnits);
+            });
+
+            // Create a div for the slot
+            var slotDiv = document.createElement('div');
+            slotDiv.id = slotName; // Id must be the same as slotName
+            document.body.appendChild(slotDiv);
+
+            // Create and add fake content 1
+            var h1=document.createElement("H2")
+            var text1=document.createTextNode("Dynamic Fake Content 1");
+            h1.appendChild(text1);
+            document.body.appendChild(h1);
+
+            // Create and add fake content 2
+            var h2=document.createElement("H2")
+            var text2=document.createTextNode("Dynamic Fake Content 2");
+            h2.appendChild(text2);
+            document.body.appendChild(h2);
+            var slot1;
+            googletag.cmd.push(function() {
+                slot1 = googletag.defineSlot('/19968336/header-bid-tag-0', [[300, 250]], slotName)
+                	.addService(googletag.pubads());
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+            });
+
+
+                pbjs.que.push(function() {
+                    pbjs.requestBids({
+                        timeout: PREBID_TIMEOUT,
+                        adUnitCodes: [slotName],
+                        bidsBackHandler: function() {
+                            pbjs.setTargetingForGPTAsync([slotName]);
+                            googletag.pubads().refresh([slot1]);
+                        }
+                    });
+                });
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <h1>Individual Ad Unit Refresh Example</h1>
+        <h5>Div-1</h5>
+        <!-- More initial fake content -->
+ <text>
+  <h2> Initial Fake Content 1 </h2>
+  <h2> Initial Fake Content 2 </h2>
+ </text>
+
+ <!-- Button to load more content dynamically. -->
+ <button onclick="refreshBid()">More Content</button>
+
+    </body>
+
+</html>
