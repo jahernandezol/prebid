@@ -29,8 +29,10 @@
             var googletag = googletag || {};
             googletag.cmd = googletag.cmd || [];
 
-            googletag.pubads().disableInitialLoad();
-            googletag.pubads().enableLazyLoad();
+            googletag.cmd.push(function() {              
+              googletag.pubads().disableInitialLoad();
+              googletag.pubads().enableLazyLoad();
+            });
 
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
