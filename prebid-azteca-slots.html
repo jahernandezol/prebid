@@ -30,8 +30,6 @@
             googletag.cmd = googletag.cmd || [];
 
             googletag.pubads().disableInitialLoad();
-            googletag.pubads().enableSingleRequest();
-
 
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
@@ -150,6 +148,7 @@
                   defineSizeMapping(mapping).
                   addService(googletag.pubads());
                 googletag.enableServices();
+                googletag.pubads().enableSingleRequest();
             });
 
 
