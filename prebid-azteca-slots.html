@@ -74,6 +74,13 @@
         </script>
 
         <script>
+
+          async function processArray(array) {
+              array.forEach(async (item) => {
+              await refreshBid(item);
+              })
+          }
+
         // Function to generate unique names for slots
         var nextSlotId = 1;
         function generateNextSlotName() {
@@ -167,6 +174,8 @@
                 });
             }
 
+
+
         </script>
     </head>
 
@@ -180,7 +189,7 @@
  </text>
 
  <!-- Button to load more content dynamically. -->
- <button onclick="refreshBid(3)">More Content</button>
+ <button onclick="processArray([1,2,3])">More Content</button>
 
     </body>
 
