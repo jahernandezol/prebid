@@ -12,8 +12,9 @@
 
             googletag.cmd.push(function() {
               googletag.pubads().disableInitialLoad();
+              googletag.pubads().enableSingleRequest();
             });
-            
+
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
             var desktopSizes = [
@@ -171,8 +172,6 @@
                 slot1 = googletag.defineSlot(adUnit, sizes, slotName)
                     .defineSizeMapping(mappingSize)
                 	.addService(googletag.pubads());
-
-                googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
 
