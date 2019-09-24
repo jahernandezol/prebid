@@ -143,9 +143,7 @@
 
             var slot1;
             googletag.cmd.push(function() {
-
-                googletag.pubads().disableInitialLoad();
-
+                
                 var mappingSize;
                 switch (mapping) {
                     case 'mappingSuper':
@@ -165,9 +163,12 @@
                         break;
                 }
 
+                googletag.pubads().disableInitialLoad();
+
                 slot1 = googletag.defineSlot(adUnit, sizes, slotName)
                     .defineSizeMapping(mappingSize)
                 	.addService(googletag.pubads());
+
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
