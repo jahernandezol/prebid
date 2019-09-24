@@ -1,85 +1,40 @@
 
 <html>
-
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Individual Ad Unit Refresh Example</title>
-        <script async src="//www.googletagservices.com/tag/js/gpt.js"></script>
-        <script async src="//static.azteca.com/portal/scripts/prebid2.1.0.js"></script>
+        <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+        <script async src="https://acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
         <script>
-            var desktopSizes = [
-                 [300, 600],
-                 [300, 250]
-             ];
-             var tabletSizes = [
-                 [300, 250]
-             ];
-             var phoneSizes = [
-                 [320, 100],
-                 [320, 50]
-             ];
-             var sizes = [
-                 [320, 100],
-                 [320, 50],
-                 [300, 600],
-                 [300, 250]
-             ];
-
             var PREBID_TIMEOUT = 5000;
-
             var googletag = googletag || {};
             googletag.cmd = googletag.cmd || [];
-
-            googletag.cmd.push(function() {
-              googletag.pubads().disableInitialLoad();
-            });
-
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
+            var desktopSizes = [
+                [970, 250],
+                [300, 600],
+                [955, 90],
+                [728, 90],
+                [300, 250]
+            ];
+            var tabletSizes = [
+                [728, 90],
+                [160, 600],
+                [300, 600],
+                [300, 250]
+            ];
+            var phoneSizes = [
+                [320, 100],
+                [320, 50],
+                [300, 250]
+            ];
 
-            var adUnits = [{
-                code: '/29782907/ADN-40/Home-Adn40',
-                mediaTypes: {
-                    banner: {
-                        sizes: sizes
-                    }
-                },
-                bids: [{
-                    bidder: 'appnexus',
-                    params: {
-                        placementId: 16818116
-                    }
-                }]
-            }];
 
-            pbjs.que.push(function() {
-                pbjs.addAdUnits(adUnits);
-                pbjs.setConfig({
-                    sizeConfig: [{
-                        'mediaQuery': '(min-width: 1025px)',
-                        'sizesSupported': desktopSizes,
-                        'labels': ['desktop']
-                    }, {
-                        'mediaQuery': '(min-width: 768px) and (max-width: 1024px)',
-                        'sizesSupported': tabletSizes,
-                        'labels': ['tablet']
-                    }, {
-                        'mediaQuery': '(min-width: 320px) and (max-width: 812px)',
-                        'sizesSupported': phoneSizes,
-                        'labels': ['phone']
-                    }]
-                });
-            });
 
         </script>
 
         <script>
-
-          async function processArray(array) {
-              array.forEach(async (item) => {
-              await refreshBid(item);
-              })
-          }
-
         // Function to generate unique names for slots
         var nextSlotId = 1;
         function generateNextSlotName() {
@@ -88,44 +43,91 @@
         }
 
 
-        function refreshBid(num) {
+        function refreshBid(adUnit, sizes, mapping) {
             // Generate next slot name
             var slotName = generateNextSlotName();
+            var adPrebid;
 
-            var adUnits = [{
-                code: slotName,
-                mediaTypes: {
-                    banner: {
-                        sizes: sizes
-                    }
-                },
-                bids: [{
-                    bidder: 'appnexus',
-                    params: {
-                        placementId: 16818116
-                    }
-                }]
-            }];
+                switch (mapping) {
+                    case 'mappingSuper':
+                        adPrebid = [{
+                            code: slotName,
+                            mediaTypes: {
+                                banner: {
+                                    sizes: sizes
+                                }
+                            },
+                            bids: [{
+                                        "bidder": "appnexus",
+                                        "params": {
+                                            "placementId": 16684121
+                                        }
+                                    },
+                                    {
+                                        "bidder": "smartadserver",
+                                        "params": {
+                                            "domain": "https://prg.smartadserver.com",
+                                            "siteId": 320836,
+                                            "pageId": 1142725,
+                                            "formatId": 79584
+                                        }
+                                    },
+                                    {
+                                        "bidder": "rubicon",
+                                        "params": {
+                                            "accountId": "15150",
+                                            "siteId": "282696",
+                                            "zoneId": "1413194",
+                                            "sizes": [2,43,57]
+                                        }
+                                    }
+                                ]
+                        }];
+                        break;
+                    case 'combo':
+                        adPrebid = [{
+                            code: slotName,
+                            mediaTypes: {
+                                banner: {
+                                    sizes: sizes
+                                }
+                            },
+                            bids: [{
+                                        "bidder": "appnexus",
+                                        "params": {
+                                            "placementId": 16684214
+                                        }
+                                    },
+                                    {
+                                        "bidder": "smartadserver",
+                                        "params": {
+                                            "domain": "https://prg.smartadserver.com",
+                                            "siteId": 320836,
+                                            "pageId": 1142725,
+                                            "formatId": 79585
+                                        }
+                                    },
+                                    {
+                                        "bidder": "rubicon",
+                                        "params": {
+                                             "accountId": "15150",
+                                            "siteId": "282696",
+                                            "zoneId": "1413194",
+                                            "sizes": [10,15]
+                                        }
+                                    }
+                                ]
+                        }];
+                        break;
+                    default:
+                        break;
+                }
+
+
 
             pbjs.que.push(function() {
-                pbjs.addAdUnits(adUnits);
-                pbjs.setConfig({
-                    sizeConfig: [{
-                        'mediaQuery': '(min-width: 1025px)',
-                        'sizesSupported': desktopSizes,
-                        'labels': ['desktop']
-                    }, {
-                        'mediaQuery': '(min-width: 768px) and (max-width: 1024px)',
-                        'sizesSupported': tabletSizes,
-                        'labels': ['tablet']
-                    }, {
-                        'mediaQuery': '(min-width: 320px) and (max-width: 812px)',
-                        'sizesSupported': phoneSizes,
-                        'labels': ['phone']
-                    }]
-                });
+                pbjs.addAdUnits(adPrebid);
             });
-
 
             // Create a div for the slot
             var slotDiv = document.createElement('div');
@@ -138,30 +140,52 @@
             h1.appendChild(text1);
             document.body.appendChild(h1);
 
-            // Create and add fake content 2
-            var h2=document.createElement("H2")
-            var text2=document.createTextNode("Dynamic Fake Content 2");
-            h2.appendChild(text2);
-            document.body.appendChild(h2);
+
             var slot1;
             googletag.cmd.push(function() {
 
-              var mapping = googletag.sizeMapping().
-              addSize([320, 0], [[320,50],[320,100]]).
-              addSize([768, 200], [300, 250]). // Tablet
-              addSize([1025, 200], [[300,250],[300,600]]). // Desktop
-              build();
+                googletag.pubads().disableInitialLoad();
 
-                slot1 = googletag.defineSlot('/29782907/ADN-40/Home-Adn40', [[300, 250]], slotName).
-                  defineSizeMapping(mapping).
-                  addService(googletag.pubads());
+                var mappingSize;
+                switch (mapping) {
+                    case 'mappingSuper':
+                        mappingSize = googletag.sizeMapping()
+                        .addSize([980, 140], [[728, 90]])
+                        .addSize([740, 140], [728, 90])
+                        .addSize([320, 140], [320, 50])
+                        .build();
+                        break;
+                    case 'combo':
+                        mappingSize = googletag.sizeMapping()
+                        .addSize([980, 140], [[300, 250],[300, 600]])
+                        .addSize([740, 140], [300, 250])
+                        .addSize([320, 140], [[300, 250]]).build();
+                        break;
+                    default:
+                        break;
+                }
 
+                slot1 = googletag.defineSlot(adUnit, sizes, slotName)
+                    .defineSizeMapping(mappingSize)
+                	.addService(googletag.pubads());
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
 
 
                 pbjs.que.push(function() {
+                    pbjs.setConfig( {
+                    sizeConfig:[ {
+                        'mediaQuery': '(min-width: 1025px)', 'sizesSupported': desktopSizes, 'labels': ['desktop']
+                    }
+                    , {
+                        'mediaQuery': '(min-width: 768px) and (max-width: 1024px)', 'sizesSupported': tabletSizes, 'labels': ['tablet']
+                    }
+                    , {
+                        'mediaQuery': '(min-width: 320px) and (max-width: 767px)', 'sizesSupported': phoneSizes, 'labels': ['phone']
+                    }
+                    ]
+                });
                     pbjs.requestBids({
                         timeout: PREBID_TIMEOUT,
                         adUnitCodes: [slotName],
@@ -176,6 +200,7 @@
 
 
         </script>
+
     </head>
 
     <body>
@@ -184,12 +209,15 @@
         <!-- More initial fake content -->
  <text>
   <h2> Initial Fake Content 1 </h2>
-  <h2> Initial Fake Content 2 </h2>
  </text>
 
  <!-- Button to load more content dynamically. -->
- <button onclick="processArray([1,2,3])">More Content</button>
+ <button onclick="refreshBid('/29782907/TVAzteca/TVAzteca-home',[[728, 90],[320, 50]],'mappingSuper')">More Super</button>
+ <button onclick="refreshBid('/29782907/TVAzteca/TVAzteca-home',[[300, 600],[300, 250],[320, 50]],'combo')">More Combo</button>
 
-    </body>
-
+</body>
+<script>
+        refreshBid('/29782907/TVAzteca/TVAzteca-home',[[728, 90],[320, 50]],'mappingSuper');
+        refreshBid('/29782907/TVAzteca/TVAzteca-home',[[300, 600],[300, 250],[320, 50]],'combo');
+</script>
 </html>
