@@ -9,12 +9,6 @@
             var PREBID_TIMEOUT = 5000;
             var googletag = googletag || {};
             googletag.cmd = googletag.cmd || [];
-
-            googletag.cmd.push(function() {
-              googletag.pubads().disableInitialLoad();
-              googletag.pubads().enableSingleRequest();
-            });
-
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
             var desktopSizes = [
@@ -150,6 +144,7 @@
             var slot1;
             googletag.cmd.push(function() {
 
+
                 var mappingSize;
                 switch (mapping) {
                     case 'mappingSuper':
@@ -172,12 +167,15 @@
                 slot1 = googletag.defineSlot(adUnit, sizes, slotName)
                     .defineSizeMapping(mappingSize)
                 	.addService(googletag.pubads());
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
 
 
                 pbjs.que.push(function() {
                     pbjs.setConfig( {
+                    priceGranularity: "dense",
                     sizeConfig:[ {
                         'mediaQuery': '(min-width: 1025px)', 'sizesSupported': desktopSizes, 'labels': ['desktop']
                     }
