@@ -9,6 +9,11 @@
             var PREBID_TIMEOUT = 5000;
             var googletag = googletag || {};
             googletag.cmd = googletag.cmd || [];
+
+            googletag.cmd.push(function() {
+              googletag.pubads().disableInitialLoad();
+            });
+            
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
             var desktopSizes = [
@@ -47,10 +52,6 @@
             // Generate next slot name
             var slotName = generateNextSlotName();
             var adPrebid;
-
-            googletag.cmd.push(function() {
-              googletag.pubads().disableInitialLoad();
-            });
 
                 switch (mapping) {
                     case 'mappingSuper':
