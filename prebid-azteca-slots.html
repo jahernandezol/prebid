@@ -48,6 +48,10 @@
             var slotName = generateNextSlotName();
             var adPrebid;
 
+            googletag.cmd.push(function() {
+              googletag.pubads().disableInitialLoad();
+            });
+
                 switch (mapping) {
                     case 'mappingSuper':
                         adPrebid = [{
@@ -143,7 +147,7 @@
 
             var slot1;
             googletag.cmd.push(function() {
-                
+
                 var mappingSize;
                 switch (mapping) {
                     case 'mappingSuper':
@@ -162,8 +166,6 @@
                     default:
                         break;
                 }
-
-                googletag.pubads().disableInitialLoad();
 
                 slot1 = googletag.defineSlot(adUnit, sizes, slotName)
                     .defineSizeMapping(mappingSize)
