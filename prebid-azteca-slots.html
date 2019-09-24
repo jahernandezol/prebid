@@ -169,6 +169,7 @@
                 	.addService(googletag.pubads());
                 googletag.pubads().disableInitialLoad();
                 googletag.pubads().enableSingleRequest();
+                googletag.pubads().setTargeting('Pos', 'test');  // Applies to all slots on the page
                 googletag.enableServices();
             });
 
