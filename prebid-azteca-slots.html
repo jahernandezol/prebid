@@ -168,6 +168,8 @@
                     .defineSizeMapping(mappingSize)
                 	.addService(googletag.pubads());
                 googletag.pubads().disableInitialLoad();
+                // A) Enable with defaults.
+                googletag.pubads().enableLazyLoad();
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
