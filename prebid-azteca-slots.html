@@ -5,9 +5,6 @@
         <title>Individual Ad Unit Refresh Example</title>
         <script async src="https://www.googletagservices.com/tag/js/gpt.js"></script>
         <script async src="https://acdn.adnxs.com/prebid/not-for-prod/1/prebid.js"></script>
-        <style>
-          h2{margin-bottom: 500px;}
-        </style>
         <script>
             var PREBID_TIMEOUT = 5000;
             var googletag = googletag || {};
@@ -171,8 +168,6 @@
                     .defineSizeMapping(mappingSize)
                 	.addService(googletag.pubads());
                 googletag.pubads().disableInitialLoad();
-                // A) Enable with defaults.
-                googletag.pubads().enableLazyLoad();
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
