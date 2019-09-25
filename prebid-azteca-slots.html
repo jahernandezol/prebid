@@ -11,6 +11,10 @@
             googletag.cmd = googletag.cmd || [];
             var pbjs = pbjs || {};
             pbjs.que = pbjs.que || [];
+            googletag.cmd.push(function() {
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().setTargeting('Pos', 'test');  // Applies to all slots on the page
+            });
             var desktopSizes = [
                 [970, 250],
                 [300, 600],
@@ -149,7 +153,7 @@
                 switch (mapping) {
                     case 'mappingSuper':
                         mappingSize = googletag.sizeMapping()
-                        .addSize([980, 140], [[728, 90],[970,250],[970,90]])
+                        .addSize([980, 140], [[728, 90],[970,90],[970,250]])
                         .addSize([740, 140], [728, 90])
                         .addSize([320, 140], [320, 50])
                         .build();
@@ -167,16 +171,14 @@
                 slot1 = googletag.defineSlot(adUnit, sizes, slotName)
                     .defineSizeMapping(mappingSize)
                 	.addService(googletag.pubads());
-                googletag.pubads().disableInitialLoad();
                 googletag.pubads().enableSingleRequest();
-                googletag.pubads().setTargeting('Pos', 'test');  // Applies to all slots on the page
                 googletag.enableServices();
             });
 
 
                 pbjs.que.push(function() {
                     pbjs.setConfig( {
-                    priceGranularity: "dense",
+                    priceGranularity: 'dense',
                     sizeConfig:[ {
                         'mediaQuery': '(min-width: 1025px)', 'sizesSupported': desktopSizes, 'labels': ['desktop']
                     }
