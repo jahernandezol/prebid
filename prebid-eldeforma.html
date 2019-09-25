@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="es-MX" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
   <head>
@@ -11,6 +9,7 @@
 			<script>
 			var quizSiteUrl = 'https://eldeforma.com/';
 									</script>
+
 
 <!-- This site is optimized with the Yoast SEO Premium plugin v4.5 - https://yoast.com/wordpress/plugins/seo/ -->
 <meta name="description" content="Estamos dispuestos a inventar con tal de que te rías y a la vez somos muy honestos... Honestamente todo es mentira."/>
@@ -281,8 +280,9 @@ img.emoji {
 		var first_script_tag = document.getElementsByTagName('script')[0];
 		first_script_tag.parentNode.insertBefore(pl_beacon, first_script_tag);
 	})();
-</script>			<meta property="fb:pages" content="174058432636166" />
-			<script src=https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/js/ed-prebid.js></script>
+</script>
+<meta property="fb:pages" content="174058432636166" />
+<script src=https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/js/ed-prebid.js></script>
 
 <link rel='dns-prefetch' href='//v0.wordpress.com'/>
 <link rel="apple-touch-icon" sizes="57x57" href="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/icons/apple-icon-57x57.png">
@@ -308,7 +308,8 @@ img.emoji {
 <!--End Instant Articles Tag-->
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -328,11 +329,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End comScore Tag -->
 
 <!-- Start AMP Auto ADS -->
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
+<script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
 <!-- End AMP Auto ADS -->  <!-- Start prebid implementation -->
-  <script>
+  <script type="text/javascript">
       var topSizes = [
         [320, 50],
         [728, 90],
@@ -384,7 +383,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         [300, 250]
       ];
 
-      var PREBID_TIMEOUT = 2000;
+      var PREBID_TIMEOUT = 1000;
       var FAILSAFE_TIMEOUT = 3000;
       var adUnits = [
           {
@@ -451,27 +450,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   }
               ]
           },
-          {
-              code: 'div-gpt-ad-1436230320809-2',
-              mediaTypes: {
-                  banner: {
-                      sizes: boxSizes
-                  }
-              },
-              bids: [
-                  {
-                      bidder: 'appnexus',
-                      params: {
-                          placementId: 16734907//,
-                          //keywords: { section: [''] }
-                      }
-                  },
-                  /*{
-                      bidder: 'rubicon',
-                      params: {
-                          //TODO
-                      }
-                  },*/
                   {
                       bidder: 'smartadserver',
                       params: {
@@ -515,68 +493,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   }
               ]
           },
-          {
-              code: 'div-gpt-ad-1488355975184-0',
-              mediaTypes: {
-                  banner: {
-                      sizes: boxSizes
-                  }
-              },
-              bids: [
-                  {
-                      bidder: 'appnexus',
-                      params: {
-                          placementId: 16734916//,
-                          //keywords: { section: [''] }
-                      }
-                  },
-                  /*{
-                      bidder: 'rubicon',
-                      params: {
-                          //TODO
-                      }
-                  },*/
-                  {
-                      bidder: 'smartadserver',
-                      params: {
-                          domain: 'https://prg.smartadserver.com',
-                          siteId: 316845,
-                          pageId: 1135559,
-                          formatId: 83027
-                      }
-                  }
-              ]
-          },
-          {
-              code: 'div-gpt-ad-1501739033284-0',
-              mediaTypes: {
-                  banner: {
-                      sizes: afterArticleSizes
-                  }
-              },
-              bids: [
-                  {
-                      bidder: 'appnexus',
-                      params: {
-                          placementId: 16734903//,
-                          //keywords: { section: [''] }
-                      }
-                  },
-                  /*{
-                      bidder: 'rubicon',
-                      params: {
-                          //TODO
-                      }
-                  },*/
-                  {
-                      bidder: 'smartadserver',
-                      params: {
-                          domain: 'https://prg.smartadserver.com',
-                          siteId: 316845,
-                          pageId: 1135559,
-                          formatId: 83026
-                      }
-                  }
               ]
           },
       ];
@@ -635,15 +551,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       googletag.cmd.push(function() {
 
           var mapping = googletag.sizeMapping().
-              addSize([1024, 400], [[970, 90], [970,250], [728,90]]).
-              addSize([800, 400], [728, 90]).
-              addSize([600, 400], [468, 60]).
+              addSize([1024, 400], [[970, 90], [970,250], [728,90], [320, 100]]).
+              addSize([800, 400], [[728, 90],[320, 100]]).
+              addSize([600, 400], [[468, 60],[320, 100]]).
               addSize([320, 400], [[320, 50],[320, 100]]).
               build();
 
           var mapping2 = googletag.sizeMapping().
-              addSize([800, 400], [728, 90]).
-              addSize([600, 400], [468, 60]).
+              addSize([800, 400], [[728, 90],[320, 100]]).
+              addSize([600, 400], [[468, 60],[320, 100]]).
               addSize([320, 400], [[320, 50],[320, 100]]).
               build();
 
@@ -682,11 +598,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           }
 
           googletag.defineSlot('/43577425/ED-Box-01', skyscraperSizes, 'div-gpt-ad-1485838347335-0').defineSizeMapping(box1Mapping).addService(googletag.pubads());
-          googletag.defineSlot('/43577425/ED-Box-02', boxSizes, 'div-gpt-ad-1436230320809-2').addService(googletag.pubads());//Box Banner ATF
           googletag.defineSlot('/43577425/ED-970x90', topSizes, 'div-gpt-ad-1436230320809-0').defineSizeMapping(mapping).addService(googletag.pubads());//Billboard
           googletag.defineSlot('/43577425/ED-Box-03', boxSizes, 'div-gpt-ad-1436230320809-3').addService(googletag.pubads());//Box Banner BTF
-          googletag.defineSlot('/43577425/ED-AfterArticle', afterArticleSizes, 'div-gpt-ad-1501739033284-0').defineSizeMapping(mapping2).addService(googletag.pubads());//AfterArticle
-          googletag.defineSlot('/43577425/ED-Box-04', boxSizes, 'div-gpt-ad-1488355975184-0').addService(googletag.pubads());//AfterContent
           googletag.defineSlot('/43577425/skin', [150, 405], 'div-gpt-ad-1531950471404-0').defineSizeMapping(skinSizeMapping).addService(googletag.pubads());//Skin Left
           googletag.defineSlot('/43577425/skin_right', [150, 405], 'div-gpt-ad-1532356711732-0').defineSizeMapping(skinSizeMapping).addService(googletag.pubads());//Skin Right
           googletag.pubads().enableSingleRequest();
@@ -728,7 +641,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div id="wrppr" class="wrppr" role="document">
       <!--DEFORMA CONTAINER-->
       <div id="deforma--container">
-      <section  id="section--editors"  class="section section--editors "><div class="container-fluid"  data-container="section-container" ><ul class="block-grid-xs-1 block-grid-sm-2 block-grid-md-4" ><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-846325 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider tag-beca tag-entrevista tag-mentiras" ><button
+      <section  id="section--editors"  class="section section--editors "><div class="container-fluid"  data-container="section-container" ><ul class="block-grid-xs-1 block-grid-sm-2 block-grid-md-4" ><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-847555 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-esreal category-zlider tag-greta-thunberg tag-paty-navidad" ><button
+						data-dialog="share--dialog"
+						data-title="Alguien dele una columna de opinión a Paty Navidad, porque se le fue encima a Greta Thunberg"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/paty-navidad.jpg"
+						data-url="https://eldeforma.com?p=159911"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/paty-navidad-greta-thunberg-titere-multimillonarios-onu-comentarios-twitter/" title="Continuar leyendo : Alguien dele una columna de opinión a Paty Navidad, porque se le fue encima a Greta Thunberg" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--md"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/paty-navidad.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/paty-navidad.jpg" width="820" alt="Alguien dele una columna de opinión a Paty Navidad, porque se le fue encima a Greta Thunberg" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/paty-navidad.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__header__label" ><span>EsReal</span></span><h2 ><span itemprop="headline">Alguien dele una columna de opinión a Paty Navidad, porque se le fue encima a Greta Thunberg</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/paty-navidad-greta-thunberg-titere-multimillonarios-onu-comentarios-twitter/"/>
+<meta itemprop="datePublished" content="2019-09-25T12:34:47-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T12:35:23-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Alf</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article></li><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-846839 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider tag-catolica tag-demonio tag-diablo tag-maquillaje tag-regano tag-religion tag-senora" ><button
+						data-dialog="share--dialog"
+						data-title="Clasico que una doñita te regaña porque el maquillaje es del diablo y tiene sangre de animales"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-maquillaje.jpg"
+						data-url="https://eldeforma.com?p=159911"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/24/maquillaje-sangre-de-murcielago-donita-teorias-conspirativas-video/" title="Continuar leyendo : Clasico que una doñita te regaña porque el maquillaje es del diablo y tiene sangre de animales" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--md"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-maquillaje.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-maquillaje.jpg" width="820" alt="doñita maquillaje" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-maquillaje.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__header__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">Clasico que una doñita te regaña porque el maquillaje es del diablo y tiene sangre de animales</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/maquillaje-sangre-de-murcielago-donita-teorias-conspirativas-video/"/>
+<meta itemprop="datePublished" content="2019-09-24T17:05:05-05:00"/>
+<meta itemprop="dateModified" content="2019-09-24T17:05:40-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Teki</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article></li><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-846613 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><button
+						data-dialog="share--dialog"
+						data-title="Este minino quiso ser desalojado pero resultó ser un exitoso e influyente abogado"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/minino-1.jpg"
+						data-url="https://eldeforma.com?p=159911"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/24/minino-gato-callejero-empleado-despacho-abogados-brasil/" title="Continuar leyendo : Este minino quiso ser desalojado pero resultó ser un exitoso e influyente abogado" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--md"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/minino-1.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/minino-1.jpg" width="820" alt="Este minino quiso ser desalojado pero resultó ser un exitoso e influyente abogado" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/minino-1.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__header__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">Este minino quiso ser desalojado pero resultó ser un exitoso e influyente abogado</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/minino-gato-callejero-empleado-despacho-abogados-brasil/"/>
+<meta itemprop="datePublished" content="2019-09-24T12:49:47-05:00"/>
+<meta itemprop="dateModified" content="2019-09-24T12:52:31-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Alf</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article></li><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-846325 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider tag-beca tag-entrevista tag-mentiras" ><button
 						data-dialog="share--dialog"
 						data-title="13 mentiras que decimos cuando solicitamos una beca"
 						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/beca-deforma.png"
@@ -738,69 +714,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta itemprop="dateModified" content="2019-09-24T10:10:33-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name">Adolfo Santino</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article></li><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-846375 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-entret category-la-duda category-zlider tag-aaron-paul tag-breaking-bad tag-bryan-cranston tag-el-camino tag-netflix" ><button
-						data-dialog="share--dialog"
-						data-title="¡Yeah, b*tch! Ya salió el nuevo trailer de El Camino, la película de Breaking Bad"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-breaking-bad-el-camino-trailer.png"
-						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/24/breaking-bad-el-camino-trailer/" title="Continuar leyendo : ¡Yeah, b*tch! Ya salió el nuevo trailer de El Camino, la película de Breaking Bad" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--md"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-breaking-bad-el-camino-trailer.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-breaking-bad-el-camino-trailer.png" width="820" alt="¡Yeah, b*tch! Ya salió el nuevo trailer de El Camino, la película de Breaking Bad" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-breaking-bad-el-camino-trailer.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__header__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">¡Yeah, b*tch! Ya salió el nuevo trailer de El Camino, la película de Breaking Bad</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/breaking-bad-el-camino-trailer/"/>
-<meta itemprop="datePublished" content="2019-09-24T09:53:46-05:00"/>
-<meta itemprop="dateModified" content="2019-09-24T09:53:46-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Chipp</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article></li><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-844415 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-zlider tag-ajedrez tag-domino tag-juegosdemesa" ><button
-						data-dialog="share--dialog"
-						data-title="Confirman que jugadores de dominó nunca aprendieron a jugar ajedrez"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/ajedrez-domino-deforma.png"
-						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/23/confirman-que-jugadores-de-domino-nunca-aprendieron-jugar-ajedrez/" title="Continuar leyendo : Confirman que jugadores de dominó nunca aprendieron a jugar ajedrez" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--md"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/ajedrez-domino-deforma.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/ajedrez-domino-deforma.png" width="719" alt="Confirman que jugadores de dominó nunca aprendieron a jugar ajedrez" height="333" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/ajedrez-domino-deforma.png"><meta itemprop="width" content="719"><meta itemprop="height" content="333"></figure><header class="article__header "><span class="article__tax__label article__header__label" ><span>Nacional</span></span><h2 ><span itemprop="headline">Confirman que jugadores de dominó nunca aprendieron a jugar ajedrez</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/confirman-que-jugadores-de-domino-nunca-aprendieron-jugar-ajedrez/"/>
-<meta itemprop="datePublished" content="2019-09-23T09:55:54-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T10:01:07-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Adolfo Santino</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article></li><li class="block-grid-item" ><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-844995 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-zlider" ><button
-						data-dialog="share--dialog"
-						data-title="Personas que coman garnachas con refresco light recibirán títulos de nutriólogos"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/titulo-de-nutriologo.jpg"
-						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/21/comer-garnachas-refresco-light-titulo-de-nutriologos/" title="Continuar leyendo : Personas que coman garnachas con refresco light recibirán títulos de nutriólogos" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--md"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/titulo-de-nutriologo.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/titulo-de-nutriologo.jpg" width="820" alt="Personas que coman garnachas con refresco light recibirán títulos de nutriólogos" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/titulo-de-nutriologo.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__header__label" ><span>Nacional</span></span><h2 ><span itemprop="headline">Personas que coman garnachas con refresco light recibirán títulos de nutriólogos</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/21/comer-garnachas-refresco-light-titulo-de-nutriologos/"/>
-<meta itemprop="datePublished" content="2019-09-21T15:47:54-05:00"/>
-<meta itemprop="dateModified" content="2019-09-21T15:50:37-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Lui</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -958,14 +871,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="row">
 						<!--LEFT-->
 			<div class="col-md-12 sw-gutter-right">
-				<section  id="section--featured"  class="section section--featured"><div class="row row--nogutter"  data-container="section-container"><div class="col-sm-8" data-column="left"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover article--primary post-844843 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider" ><button
+				<section  id="section--featured"  class="section section--featured"><div class="row row--nogutter"  data-container="section-container"><div class="col-sm-8" data-column="left"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover article--primary post-847697 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><button
 						data-dialog="share--dialog"
-						data-title="14 nombres ñeros con que los mexicanos conocemos estas enfermedades"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/enfermedades-neras.jpg"
+						data-title="Así te quería agarrar: cacharon al Jefe de Cultura Vial estacionándose en un lugar prohibido"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/baia-baia-cultura-vial.jpg"
 						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/24/nombres-neros-enfermedades-comunes-raras-en-mexico-top-14/" title="Continuar leyendo : 14 nombres ñeros con que los mexicanos conocemos estas enfermedades" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--lg"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/enfermedades-neras.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/enfermedades-neras.jpg" width="820" alt="14 nombres ñeros con que los mexicanos conocemos estas enfermedades" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/enfermedades-neras.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header article__header--gradient"><span class="article__tax__label article__header__label" ><span>Destacada</span></span><h1 ><span itemprop="headline">14 nombres ñeros con que los mexicanos conocemos estas enfermedades</span></h1></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/nombres-neros-enfermedades-comunes-raras-en-mexico-top-14/"/>
-<meta itemprop="datePublished" content="2019-09-24T10:05:52-05:00"/>
-<meta itemprop="dateModified" content="2019-09-24T10:05:52-05:00"/>
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/jefe-cultura-vial-puebla-estacionando-lugar-prohibido-denuncia-foto-twitter/" title="Continuar leyendo : Así te quería agarrar: cacharon al Jefe de Cultura Vial estacionándose en un lugar prohibido" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--lg"><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/baia-baia-cultura-vial.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/baia-baia-cultura-vial.jpg" width="820" alt="Así te quería agarrar: cacharon al Jefe de Cultura Vial estacionándose en un lugar prohibido" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/baia-baia-cultura-vial.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header article__header--gradient"><span class="article__tax__label article__header__label" ><span>Destacada</span></span><h1 ><span itemprop="headline">Así te quería agarrar: cacharon al Jefe de Cultura Vial estacionándose en un lugar prohibido</span></h1></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/jefe-cultura-vial-puebla-estacionando-lugar-prohibido-denuncia-foto-twitter/"/>
+<meta itemprop="datePublished" content="2019-09-25T13:35:42-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T13:37:09-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name">Lui</span>
 </span>
@@ -979,16 +892,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article></div><div class="col-sm-4" data-column="right"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-844805 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/20/dibujo-concurso-dark-phoenix-x-men-frikiplaza-likes/" title="Continuar leyendo : Típico que dibujas un X-Men guajolote y ganas un concurso gracias a los likes" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img "><button
+</article></div><div class="col-sm-4" data-column="right"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-847499 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider tag-8-mile tag-eminem tag-hailie-matters" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/hija-eminem-hailie-jade-scott-edad-fotos/" title="Continuar leyendo : ¿Te quieres sentir bien Lose Yourself? Así luce la hija de Eminen yo my man Slim Shady" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img "><button
 						data-dialog="share--dialog"
-						data-title="Típico que dibujas un X-Men guajolote y ganas un concurso gracias a los likes"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/tiipco-que-dibujas.jpg"
+						data-title="¿Te quieres sentir bien Lose Yourself? Así luce la hija de Eminen yo my man Slim Shady"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/eminem.jpg"
 						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/tiipco-que-dibujas.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/tiipco-que-dibujas.jpg" width="820" alt="Típico que dibujas un X-Men guajolote y ganas un concurso gracias a los likes" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/tiipco-que-dibujas.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header article__header--gradient"><span class="article__tax__label article__header__label" ><span>Destacada</span></span><h2 ><span itemprop="headline">Típico que dibujas un X-Men guajolote y ganas un concurso gracias a los likes</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/20/dibujo-concurso-dark-phoenix-x-men-frikiplaza-likes/"/>
-<meta itemprop="datePublished" content="2019-09-20T15:14:21-05:00"/>
-<meta itemprop="dateModified" content="2019-09-20T15:15:24-05:00"/>
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/eminem.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/eminem.jpg" width="820" alt="¿Te quieres sentir bien Lose Yourself? Así luce la hija de Eminen yo my man Slim Shady" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/eminem.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header article__header--gradient"><span class="article__tax__label article__header__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">¿Te quieres sentir bien Lose Yourself? Así luce la hija de Eminen yo my man Slim Shady</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/hija-eminem-hailie-jade-scott-edad-fotos/"/>
+<meta itemprop="datePublished" content="2019-09-25T11:16:30-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T11:17:10-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Lui</span>
+<span itemprop="name">Alf</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -1000,16 +913,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-844715 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/20/policia-escribe-libro-de-poemas-guadalajara-francisco-lopez-lanz/" title="Continuar leyendo : Mientras tú aún no acabas la tesis, este poli ya publicó su libro de poemas" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img "><button
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--cover post-846763 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider tag-rubia" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/24/20-villanas-rubias-caricaturas-peliculas-series-90s-retro/" title="Continuar leyendo : 20 villanas rubias que nos dieron pauta para decir “¡significan peligro!”" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img "><button
 						data-dialog="share--dialog"
-						data-title="Mientras tú aún no acabas la tesis, este poli ya publicó su libro de poemas"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/poeta-policia.jpg"
+						data-title="20 villanas rubias que nos dieron pauta para decir “¡significan peligro!”"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/rubias.jpg"
 						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/poeta-policia.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/poeta-policia.jpg" width="820" alt="Mientras tú aún no acabas la tesis, este poli ya publicó su libro de poemas" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/poeta-policia.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header article__header--gradient"><span class="article__tax__label article__header__label" ><span>Destacada</span></span><h2 ><span itemprop="headline">Mientras tú aún no acabas la tesis, este poli ya publicó su libro de poemas</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/20/policia-escribe-libro-de-poemas-guadalajara-francisco-lopez-lanz/"/>
-<meta itemprop="datePublished" content="2019-09-20T14:30:09-05:00"/>
-<meta itemprop="dateModified" content="2019-09-20T14:31:00-05:00"/>
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/rubias.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/rubias.jpg" width="820" alt="20 villanas rubias que nos dieron pauta para decir “¡significan peligro!”" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/rubias.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header article__header--gradient"><span class="article__tax__label article__header__label" ><span>Listas</span></span><h2 ><span itemprop="headline">20 villanas rubias que nos dieron pauta para decir “¡significan peligro!”</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/20-villanas-rubias-caricaturas-peliculas-series-90s-retro/"/>
+<meta itemprop="datePublished" content="2019-09-24T15:27:50-05:00"/>
+<meta itemprop="dateModified" content="2019-09-24T16:59:44-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Lui</span>
+<span itemprop="name">Alf</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -1021,16 +934,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article></div></div></section><section  id="section--before"  class="section section--before"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns article--after post-844371 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-entret category-la-duda category-zlider tag-aliens tag-area-51 tag-naruto tag-nevada tag-storm-area-51" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+</article></div></div></section><section  id="section--before"  class="section section--before"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns article--after post-846523 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-videos category-zlider tag-cumbia tag-cumbion" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
 						data-dialog="share--dialog"
-						data-title="Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-area-51-storm.png"
+						data-title="México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/bailan-cumbion-con-el-ataud.png"
 						data-url="https://eldeforma.com?p=159911"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/20/area-51-storm-aliens-nevada/" title="Continuar leyendo : Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Increíble pero cierto</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-area-51-storm.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-area-51-storm.png" width="820" alt="Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-area-51-storm.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/20/area-51-storm-aliens-nevada/" title="Continuar leyendo : Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando" rel="bookmark"><span itemprop="headline">Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando</span></a></h2></header><div  class="article__content" ><p >Por este tipo de cosas pagamos el Internet</p></div><footer class="article__footer clearfix article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando" data-url="https://eldeforma.com?p=159911"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Estupidez nivel: Hoy es el asalto al Area 51 y sí hay gente acampando" data-url="https://eldeforma.com?p=159911"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/20/area-51-storm-aliens-nevada/"/>
-<meta itemprop="datePublished" content="2019-09-20T10:12:30-05:00"/>
-<meta itemprop="dateModified" content="2019-09-20T11:54:24-05:00"/>
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/24/baile-con-ataud-cumbia-funeral-ciudad-de-mexico-video/" title="Continuar leyendo : México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Videos virales</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/bailan-cumbion-con-el-ataud.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/bailan-cumbion-con-el-ataud.png" width="820" alt="México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/bailan-cumbion-con-el-ataud.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/24/baile-con-ataud-cumbia-funeral-ciudad-de-mexico-video/" title="Continuar leyendo : México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia" rel="bookmark"><span itemprop="headline">México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia</span></a></h2></header><div  class="article__content" ><p >Cuando yo bailo esta cumbia me olvido de las penas</p></div><footer class="article__footer clearfix article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia" data-url="https://eldeforma.com?p=159911"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="México Mágico: Bailan cumbión con el ataúd y hacen el mejor funeral de la historia" data-url="https://eldeforma.com?p=159911"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/baile-con-ataud-cumbia-funeral-ciudad-de-mexico-video/"/>
+<meta itemprop="datePublished" content="2019-09-24T12:04:18-05:00"/>
+<meta itemprop="dateModified" content="2019-09-24T12:05:48-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Chipp</span>
+<span itemprop="name">Yisus</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -1059,16 +972,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="row">
 			<!--.left : AREA LOOP-->
 			<div class="col-md-8 sw-gutter-right">
-				<section  id="section--loop"  class="section section--loop widget-adbox__watcher"><div class="loop"  id ="loop"><div class="section__inner section__loop--inner"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-846361 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-zlider tag-cine tag-palomitas tag-parejas" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+				<section  id="section--loop"  class="section section--loop widget-adbox__watcher"><div class="loop"  id ="loop"><div class="section__inner section__loop--inner"><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-848015 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/yalitza-aparicio-estrena-novio-foto-instagram/" title="Continuar leyendo : ¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
 						data-dialog="share--dialog"
-						data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/palomitas-cine-deforma.png"
-						data-url="http://bit.ly/2mp0rJ5"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/24/palomitas-reglas-basicas-para-ir-al-cine-comida/" title="Continuar leyendo : Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Destacada</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/palomitas-cine-deforma.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/palomitas-cine-deforma.png" width="903" alt="palomitas" height="473" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/palomitas-cine-deforma.png"><meta itemprop="width" content="903"><meta itemprop="height" content="473"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/24/palomitas-reglas-basicas-para-ir-al-cine-comida/" title="Continuar leyendo : Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula" rel="bookmark"><span itemprop="headline">Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula</span></a></h2></header><div  class="article__content" ><p >Son los que se ponen a platicar duranta la cinta</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula" data-url="http://bit.ly/2mp0rJ5"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula" data-url="http://bit.ly/2mp0rJ5"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/24/palomitas-reglas-basicas-para-ir-al-cine-comida/"/>
-<meta itemprop="datePublished" content="2019-09-24T10:15:21-05:00"/>
-<meta itemprop="dateModified" content="2019-09-24T10:15:21-05:00"/>
+						data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/yalita-1024x538.jpg"
+						data-url="http://bit.ly/2laCfKl"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/yalita-1024x538.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/yalita-1024x538.jpg" width="1024" alt="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia" height="538" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/yalita.jpg"><meta itemprop="width" content="1200"><meta itemprop="height" content="630"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Destacada</span></span><h2 ><span itemprop="headline">¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia</span></h2></header><div  class="article__content" ><p >¡INCREÍBLE PERO CIERTO!</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia" data-url="http://bit.ly/2laCfKl"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia" data-url="http://bit.ly/2laCfKl"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/yalitza-aparicio-estrena-novio-foto-instagram/"/>
+<meta itemprop="datePublished" content="2019-09-25T17:23:00-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T17:23:00-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Adolfo Santino</span>
+<span itemprop="name">Oso Rulo</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -1080,14 +993,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-846299 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/23/quieres-sentirte-viejo-crudo-y-acabado-asi-luce-ahora-el-bebe-de-que-paso-ayer/" title="Continuar leyendo : ¿Quieres sentirte viejo, crudo y acabado? Así luce ahora el bebé de &#8220;¿Qué pasó ayer?&#8221;" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article caricaturas article--columns post-848059 post type-post status-publish format-standard has-post-thumbnail hentry category-caricaturas category-comercial category-destacada category-nsfw category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
 						data-dialog="share--dialog"
-						data-title="¿Quieres sentirte viejo, crudo y acabado? Así luce ahora el bebé de &#8220;¿Qué pasó ayer?&#8221;"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/asi-luce-el-bebe-de-que-paso-ayer.jpg"
-						data-url="http://bit.ly/2meGtka"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/asi-luce-el-bebe-de-que-paso-ayer.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/asi-luce-el-bebe-de-que-paso-ayer.jpg" width="820" alt="¿Quieres sentirte viejo, crudo y acabado? Así luce ahora el bebé de &#8220;¿Qué pasó ayer?&#8221;" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/asi-luce-el-bebe-de-que-paso-ayer.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">¿Quieres sentirte viejo, crudo y acabado? Así luce ahora el bebé de &#8220;¿Qué pasó ayer?&#8221;</span></h2></header><div  class="article__content" ><p >¡INCREÍBLE PERO CIERTO!</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="¿Quieres sentirte viejo, crudo y acabado? Así luce ahora el bebé de &#8220;¿Qué pasó ayer?&#8221;" data-url="http://bit.ly/2meGtka"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="¿Quieres sentirte viejo, crudo y acabado? Así luce ahora el bebé de &#8220;¿Qué pasó ayer?&#8221;" data-url="http://bit.ly/2meGtka"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/quieres-sentirte-viejo-crudo-y-acabado-asi-luce-ahora-el-bebe-de-que-paso-ayer/"/>
-<meta itemprop="datePublished" content="2019-09-23T19:21:04-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T19:21:04-05:00"/>
+						data-title="5 desesperados métodos en los que caes para superar tus retos"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite-1024x538.jpg"
+						data-url="http://bit.ly/2nkJYpV"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/metodos-para-superar-tus-retos/" title="Continuar leyendo : 5 desesperados métodos en los que caes para superar tus retos" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Caricaturas</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite-1024x538.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite-1024x538.jpg" width="1024" alt="5 desesperados métodos en los que caes para superar tus retos" height="538" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite.jpg"><meta itemprop="width" content="1200"><meta itemprop="height" content="630"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/metodos-para-superar-tus-retos/" title="Continuar leyendo : 5 desesperados métodos en los que caes para superar tus retos" rel="bookmark"><span itemprop="headline">5 desesperados métodos en los que caes para superar tus retos</span></a></h2></header><div  class="article__content" ><p >Asistir con un coach de vida</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="5 desesperados métodos en los que caes para superar tus retos" data-url="http://bit.ly/2nkJYpV"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="5 desesperados métodos en los que caes para superar tus retos" data-url="http://bit.ly/2nkJYpV"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/metodos-para-superar-tus-retos/"/>
+<meta itemprop="datePublished" content="2019-09-25T17:00:25-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T17:00:25-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Yado</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-847907 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+						data-dialog="share--dialog"
+						data-title="Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/monterrey-tierra-de-payasos.jpg"
+						data-url="http://bit.ly/2nioWIu"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/regiomontanos-payaso-profesion-monterrey-estudio/" title="Continuar leyendo : Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Nacional</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/monterrey-tierra-de-payasos.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/monterrey-tierra-de-payasos.jpg" width="820" alt="Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/monterrey-tierra-de-payasos.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/regiomontanos-payaso-profesion-monterrey-estudio/" title="Continuar leyendo : Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio" rel="bookmark"><span itemprop="headline">Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio</span></a></h2></header><div  class="article__content" ><p >El estudio reveló que los payasos regios se dividen en: mamados, homofóbicos y "guapos"</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio" data-url="http://bit.ly/2nioWIu"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Uno de cada tres regiomontanos es, ha sido o será un payaso en su vida, revela estudio" data-url="http://bit.ly/2nioWIu"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/regiomontanos-payaso-profesion-monterrey-estudio/"/>
+<meta itemprop="datePublished" content="2019-09-25T16:32:55-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T16:32:55-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name">Ayax</span>
 </span>
@@ -1101,98 +1035,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-846223 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/23/escuela-ballet-canada-hombres-mujeres-ninos-ninas/" title="Continuar leyendo : Mientras en tu pueblo son mochos, en esta escuela hay más niños que niñas en ballet" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-847747 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-uncategorized category-zlider tag-chihuahua tag-mictlan" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
 						data-dialog="share--dialog"
-						data-title="Mientras en tu pueblo son mochos, en esta escuela hay más niños que niñas en ballet"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/escuela-nacional-de-ballet-de-canada.jpg"
-						data-url="http://bit.ly/2laiLFC"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/escuela-nacional-de-ballet-de-canada.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/escuela-nacional-de-ballet-de-canada.jpg" width="820" alt="Mientras en tu pueblo son mochos, en esta escuela hay más niños que niñas en ballet" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/escuela-nacional-de-ballet-de-canada.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Destacada</span></span><h2 ><span itemprop="headline">Mientras en tu pueblo son mochos, en esta escuela hay más niños que niñas en ballet</span></h2></header><div  class="article__content" ><p >Puntas, pataleo… ¡Miren, muchachas, estoy bailando!</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Mientras en tu pueblo son mochos, en esta escuela hay más niños que niñas en ballet" data-url="http://bit.ly/2laiLFC"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Mientras en tu pueblo son mochos, en esta escuela hay más niños que niñas en ballet" data-url="http://bit.ly/2laiLFC"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/escuela-ballet-canada-hombres-mujeres-ninos-ninas/"/>
-<meta itemprop="datePublished" content="2019-09-23T19:20:46-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T19:21:35-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Lui</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-845959 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
-						data-dialog="share--dialog"
-						data-title="19 lecciones de educación que Lois le dejó a las mamás luchonas de México"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/lois.png"
-						data-url="http://bit.ly/2midM5M"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/23/malcolm-el-de-en-medio-lois-castigos-lecciones-de-educacion-que-le-dejo-a-las-mamas-luchonas-de-mexico/" title="Continuar leyendo : 19 lecciones de educación que Lois le dejó a las mamás luchonas de México" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Listas</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/lois.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/lois.png" width="820" alt="19 lecciones de educación que Lois le dejó a las mamás luchonas de México" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/lois.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/23/malcolm-el-de-en-medio-lois-castigos-lecciones-de-educacion-que-le-dejo-a-las-mamas-luchonas-de-mexico/" title="Continuar leyendo : 19 lecciones de educación que Lois le dejó a las mamás luchonas de México" rel="bookmark"><span itemprop="headline">19 lecciones de educación que Lois le dejó a las mamás luchonas de México</span></a></h2></header><div  class="article__content" ><p >El pastel de sobras no puede faltar </p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="19 lecciones de educación que Lois le dejó a las mamás luchonas de México" data-url="http://bit.ly/2midM5M"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="19 lecciones de educación que Lois le dejó a las mamás luchonas de México" data-url="http://bit.ly/2midM5M"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/malcolm-el-de-en-medio-lois-castigos-lecciones-de-educacion-que-le-dejo-a-las-mamas-luchonas-de-mexico/"/>
-<meta itemprop="datePublished" content="2019-09-23T19:20:27-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T19:20:56-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Yisus</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-846157 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-zlider tag-bolillos tag-claudia-sheinbaum tag-gobierno-cdmx tag-puesto-de-tamales tag-tamal" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
-						data-dialog="share--dialog"
-						data-title="Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-bolillos-tamales-gobierno-cdmx.png"
-						data-url="http://bit.ly/2maeCSd"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/23/bolillos-puestos-de-tamal-gobierno-cdmx/" title="Continuar leyendo : Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Nacional</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-bolillos-tamales-gobierno-cdmx.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-bolillos-tamales-gobierno-cdmx.png" width="820" alt="Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-bolillos-tamales-gobierno-cdmx.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/23/bolillos-puestos-de-tamal-gobierno-cdmx/" title="Continuar leyendo : Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido" rel="bookmark"><span itemprop="headline">Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido</span></a></h2></header><div  class="article__content" ><p >La Guajolota es un derecho de todos los Godínez</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido" data-url="http://bit.ly/2maeCSd"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Gobierno de la CDMX apoyará con bolillos extra a tamaleras que se les acaben muy rápido" data-url="http://bit.ly/2maeCSd"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/bolillos-puestos-de-tamal-gobierno-cdmx/"/>
-<meta itemprop="datePublished" content="2019-09-23T19:20:15-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T19:20:39-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Chipp</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article comercial article--columns post-846293 post type-post status-publish format-standard has-post-thumbnail hentry category-comercial category-destacada category-esreal category-nsfw category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
-						data-dialog="share--dialog"
-						data-title="A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2010/09/cover-turner.jpg"
-						data-url="http://bit.ly/2miDhE1"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/23/un-lado-luismi-y-juanga-esta-es-la-verdadera-serie-musical-que-mexico-necesita/" title="Continuar leyendo : A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita" rel="bookmark"><span class="article__tax__label article__link__category" ><span>EsReal</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2010/09/cover-turner.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2010/09/cover-turner.jpg" width="820" alt="A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2010/09/cover-turner.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/23/un-lado-luismi-y-juanga-esta-es-la-verdadera-serie-musical-que-mexico-necesita/" title="Continuar leyendo : A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita" rel="bookmark"><span itemprop="headline">A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita</span></a></h2></header><div  class="article__content" ><p >Por fin conoceremos la historia detrás del meme de Choche</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita" data-url="http://bit.ly/2miDhE1"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="A un lado Luismi y Juanga, esta es la verdadera serie musical que México necesita" data-url="http://bit.ly/2miDhE1"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/un-lado-luismi-y-juanga-esta-es-la-verdadera-serie-musical-que-mexico-necesita/"/>
-<meta itemprop="datePublished" content="2019-09-23T18:24:33-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T18:27:32-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Gazapotl</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-846043 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/23/salieron-fotos-de-veronica-castro-y-yolanda-andrade-besandose/" title="Continuar leyendo : ¡Uuuuy! Salieron las fotos de Verónica Castro y Yolanda Andrade dándose kikos" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
-						data-dialog="share--dialog"
-						data-title="¡Uuuuy! Salieron las fotos de Verónica Castro y Yolanda Andrade dándose kikos"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/veronica-castro.jpg"
-						data-url="http://bit.ly/2mGtKqN"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/veronica-castro.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/veronica-castro.jpg" width="820" alt="¡Uuuuy! Salieron las fotos de Verónica Castro y Yolanda Andrade dándose kikos" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/veronica-castro.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">¡Uuuuy! Salieron las fotos de Verónica Castro y Yolanda Andrade dándose kikos</span></h2></header><div  class="article__content" ><p >ÚLTIMA HORA</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="¡Uuuuy! Salieron las fotos de Verónica Castro y Yolanda Andrade dándose kikos" data-url="http://bit.ly/2mGtKqN"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="¡Uuuuy! Salieron las fotos de Verónica Castro y Yolanda Andrade dándose kikos" data-url="http://bit.ly/2mGtKqN"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/salieron-fotos-de-veronica-castro-y-yolanda-andrade-besandose/"/>
-<meta itemprop="datePublished" content="2019-09-23T16:58:46-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T16:58:46-05:00"/>
+						data-title="Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/chihuahua.jpg"
+						data-url="http://bit.ly/2lzAarD"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/xoloitzcuintle-historia-azteca-perro-mexicano-mictlan/" title="Continuar leyendo : Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Destacada</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/chihuahua.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/chihuahua.jpg" width="820" alt="Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/chihuahua.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/xoloitzcuintle-historia-azteca-perro-mexicano-mictlan/" title="Continuar leyendo : Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas" rel="bookmark"><span itemprop="headline">Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas</span></a></h2></header><div  class="article__content" ><p >Ayúdame con el río we... *blump*</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas" data-url="http://bit.ly/2lzAarD"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Xoloitzcuintles que no sepan guiar al Mictlán serán considerados chihuahuas" data-url="http://bit.ly/2lzAarD"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/xoloitzcuintle-historia-azteca-perro-mexicano-mictlan/"/>
+<meta itemprop="datePublished" content="2019-09-25T16:26:59-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T16:27:35-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name">Alf</span>
 </span>
@@ -1206,16 +1056,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-845943 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider tag-cambio-climatico tag-cumbre-sobre-la-accion-climatica tag-greta-thurnberg tag-onu" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/23/greta-thunberg-onu-como-se-atreven/" title="Continuar leyendo : Greta Thunberg de 16, se la mentó a los líderes de la ONU y tú aún le tienes miedo a tu mamá" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-847915 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider tag-clark-kent tag-comicon tag-la-mole tag-mexico tag-nostalgia tag-series tag-superman tag-tom-welling" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/tom-welling-superman-smallville-invitado-la-mole-convencion-cdmx-arrowverse/" title="Continuar leyendo : Tom Welling visitará México el próximo año y podrás conocer al Superman de tu adolescencia" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
 						data-dialog="share--dialog"
-						data-title="Greta Thunberg de 16, se la mentó a los líderes de la ONU y tú aún le tienes miedo a tu mamá"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-greta-thunberg-onu-cumbre-accion-climatica.png"
-						data-url="http://bit.ly/2l8ixPj"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-greta-thunberg-onu-cumbre-accion-climatica.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-greta-thunberg-onu-cumbre-accion-climatica.png" width="820" alt="Greta Thunberg de 16, se la mentó a los líderes de la ONU y tú aún le tienes miedo a tu mamá" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-greta-thunberg-onu-cumbre-accion-climatica.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">Greta Thunberg de 16, se la mentó a los líderes de la ONU y tú aún le tienes miedo a tu mamá</span></h2></header><div  class="article__content" ><p >Propongamos cosas chingonas</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Greta Thunberg de 16, se la mentó a los líderes de la ONU y tú aún le tienes miedo a tu mamá" data-url="http://bit.ly/2l8ixPj"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Greta Thunberg de 16, se la mentó a los líderes de la ONU y tú aún le tienes miedo a tu mamá" data-url="http://bit.ly/2l8ixPj"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/greta-thunberg-onu-como-se-atreven/"/>
-<meta itemprop="datePublished" content="2019-09-23T16:55:31-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T17:29:08-05:00"/>
+						data-title="Tom Welling visitará México el próximo año y podrás conocer al Superman de tu adolescencia"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-tom-welling-visita-mexico.png"
+						data-url="http://bit.ly/2ngT5rv"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-tom-welling-visita-mexico.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-tom-welling-visita-mexico.png" width="820" alt="tom welling" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-tom-welling-visita-mexico.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Increíble pero cierto</span></span><h2 ><span itemprop="headline">Tom Welling visitará México el próximo año y podrás conocer al Superman de tu adolescencia</span></h2></header><div  class="article__content" ><p >Somebody saaaaaave me!</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Tom Welling visitará México el próximo año y podrás conocer al Superman de tu adolescencia" data-url="http://bit.ly/2ngT5rv"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Tom Welling visitará México el próximo año y podrás conocer al Superman de tu adolescencia" data-url="http://bit.ly/2ngT5rv"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/tom-welling-superman-smallville-invitado-la-mole-convencion-cdmx-arrowverse/"/>
+<meta itemprop="datePublished" content="2019-09-25T16:05:33-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T16:07:17-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Chipp</span>
+<span itemprop="name">Teki</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -1227,14 +1077,56 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-845935 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-847911 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
 						data-dialog="share--dialog"
-						data-title="17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cosas-que-encuentras-refri-amigo-foraneo.jpg"
-						data-url="http://bit.ly/2mdfXYq"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/23/17-alimentos-que-puedes-encontrar-en-el-refri-toxico-de-tu-amigo-foraneo/" title="Continuar leyendo : 17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Listas</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cosas-que-encuentras-refri-amigo-foraneo.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cosas-que-encuentras-refri-amigo-foraneo.jpg" width="820" alt="17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo" height="460" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cosas-que-encuentras-refri-amigo-foraneo.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="460"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/23/17-alimentos-que-puedes-encontrar-en-el-refri-toxico-de-tu-amigo-foraneo/" title="Continuar leyendo : 17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo" rel="bookmark"><span itemprop="headline">17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo</span></a></h2></header><div  class="article__content" ><p >Lugares más tóxicos que Chernobyl, presenta:</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo" data-url="http://bit.ly/2mdfXYq"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="17 alimentos que puedes encontrar en el refri tóxico de tu amigo foráneo" data-url="http://bit.ly/2mdfXYq"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/17-alimentos-que-puedes-encontrar-en-el-refri-toxico-de-tu-amigo-foraneo/"/>
-<meta itemprop="datePublished" content="2019-09-23T16:48:59-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T16:49:06-05:00"/>
+						data-title="Descubren al único ser humano que sí quiso ir a ver la última película de Rambo"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/last-blood.jpg"
+						data-url="http://bit.ly/2lcnRkP"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/unico-individuo-rambo-last-blood-sylvester-stallone-cine/" title="Continuar leyendo : Descubren al único ser humano que sí quiso ir a ver la última película de Rambo" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Destacada</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/last-blood.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/last-blood.jpg" width="820" alt="Descubren al único ser humano que sí quiso ir a ver la última película de Rambo" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/last-blood.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/unico-individuo-rambo-last-blood-sylvester-stallone-cine/" title="Continuar leyendo : Descubren al único ser humano que sí quiso ir a ver la última película de Rambo" rel="bookmark"><span itemprop="headline">Descubren al único ser humano que sí quiso ir a ver la última película de Rambo</span></a></h2></header><div  class="article__content" ><p >Alega que él pensaba que era una retransmisión</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Descubren al único ser humano que sí quiso ir a ver la última película de Rambo" data-url="http://bit.ly/2lcnRkP"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Descubren al único ser humano que sí quiso ir a ver la última película de Rambo" data-url="http://bit.ly/2lcnRkP"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/unico-individuo-rambo-last-blood-sylvester-stallone-cine/"/>
+<meta itemprop="datePublished" content="2019-09-25T16:03:06-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T16:03:06-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Lui</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--full-img post-847865 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-la-duda category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/gamer-mas-vieja-del-mundo-japonesa-hamako-mori/" title="Continuar leyendo : Mientras tú sigues perdiendo en el FIFA, esta abuelita de 89 años es gamer famosa" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--full"><button
+						data-dialog="share--dialog"
+						data-title="Mientras tú sigues perdiendo en el FIFA, esta abuelita de 89 años es gamer famosa"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/grandma-gamer.jpg"
+						data-url="http://bit.ly/2lMDTSx"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/grandma-gamer.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/grandma-gamer.jpg" width="820" alt="abuelita" height="462" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/grandma-gamer.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure><header class="article__header "><span class="article__tax__label article__category__label" ><span>Destacada</span></span><h2 ><span itemprop="headline">Mientras tú sigues perdiendo en el FIFA, esta abuelita de 89 años es gamer famosa</span></h2></header><div  class="article__content" ><p >Que se armen las retas</p></div><footer class="article__footer clearfix  clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Mientras tú sigues perdiendo en el FIFA, esta abuelita de 89 años es gamer famosa" data-url="http://bit.ly/2lMDTSx"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Mientras tú sigues perdiendo en el FIFA, esta abuelita de 89 años es gamer famosa" data-url="http://bit.ly/2lMDTSx"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/gamer-mas-vieja-del-mundo-japonesa-hamako-mori/"/>
+<meta itemprop="datePublished" content="2019-09-25T14:22:06-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T14:22:41-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Lui</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-847755 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-listas category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+						data-dialog="share--dialog"
+						data-title="11 tragedias ecológicas sucediendo justo ahora que harían chillar a Greta Thunberg"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/tragedias-climaticas-que-harian-llorar-a-greta-thunberg.jpg"
+						data-url="http://bit.ly/2mM8SOE"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/greta-thunberg-tragedias-ecologicas-que-la-harian-llorar-lista/" title="Continuar leyendo : 11 tragedias ecológicas sucediendo justo ahora que harían chillar a Greta Thunberg" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Listas</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/tragedias-climaticas-que-harian-llorar-a-greta-thunberg.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/tragedias-climaticas-que-harian-llorar-a-greta-thunberg.jpg" width="820" alt="Estas tragedias harían llorar a Greta Thunberg" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/tragedias-climaticas-que-harian-llorar-a-greta-thunberg.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/greta-thunberg-tragedias-ecologicas-que-la-harian-llorar-lista/" title="Continuar leyendo : 11 tragedias ecológicas sucediendo justo ahora que harían chillar a Greta Thunberg" rel="bookmark"><span itemprop="headline">11 tragedias ecológicas sucediendo justo ahora que harían chillar a Greta Thunberg</span></a></h2></header><div  class="article__content" ><p >Se nos dijo, se nos advirtió, se nos repitió incluso.</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="11 tragedias ecológicas sucediendo justo ahora que harían chillar a Greta Thunberg" data-url="http://bit.ly/2mM8SOE"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="11 tragedias ecológicas sucediendo justo ahora que harían chillar a Greta Thunberg" data-url="http://bit.ly/2mM8SOE"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/greta-thunberg-tragedias-ecologicas-que-la-harian-llorar-lista/"/>
+<meta itemprop="datePublished" content="2019-09-25T14:11:03-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T14:11:03-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name">Ayax</span>
 </span>
@@ -1248,16 +1140,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 <meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
 </div>
-</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-845971 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-ciudad category-zlider" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-847479 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-entret category-zlider tag-anos-1600 tag-joe-arroyo tag-no-le-pegue-a-la-negra tag-salsa" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
 						data-dialog="share--dialog"
-						data-title="Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/mensaje-locutor.jpg"
-						data-url="http://bit.ly/2kI7zQq"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/23/mensajes-de-voz-whatsapp-largo-locutores-radio/" title="Continuar leyendo : Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Nacional</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/mensaje-locutor.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/mensaje-locutor.jpg" width="820" alt="Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/mensaje-locutor.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/23/mensajes-de-voz-whatsapp-largo-locutores-radio/" title="Continuar leyendo : Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores" rel="bookmark"><span itemprop="headline">Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores</span></a></h2></header><div  class="article__content" ><p >También tendrán su propio podcast</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores" data-url="http://bit.ly/2kI7zQq"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Personas que manden mensajes de Whats de más de 5 minutos obtendrán título de locutores" data-url="http://bit.ly/2kI7zQq"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/23/mensajes-de-voz-whatsapp-largo-locutores-radio/"/>
-<meta itemprop="datePublished" content="2019-09-23T16:31:26-05:00"/>
-<meta itemprop="dateModified" content="2019-09-23T16:31:26-05:00"/>
+						data-title="Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/anos-1600.jpg"
+						data-url="http://bit.ly/2mKFDf8"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/en-los-anos-1600-cancion-joe-arroyo-pan-pan-pan/" title="Continuar leyendo : Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN" rel="bookmark"><span class="article__tax__label article__link__category" ><span>Entretenimiento</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/anos-1600.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/anos-1600.jpg" width="820" alt="Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/anos-1600.jpg"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/en-los-anos-1600-cancion-joe-arroyo-pan-pan-pan/" title="Continuar leyendo : Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN" rel="bookmark"><span itemprop="headline">Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN</span></a></h2></header><div  class="article__content" ><p >Un pedazito de la historia negra, y dice así UH</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN" data-url="http://bit.ly/2mKFDf8"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Un día como hoy, pero de los años 1600&#8230; PAN PAN PAAAAAAAN" data-url="http://bit.ly/2mKFDf8"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/en-los-anos-1600-cancion-joe-arroyo-pan-pan-pan/"/>
+<meta itemprop="datePublished" content="2019-09-25T14:02:34-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T14:03:31-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Lui</span>
+<span itemprop="name">Alf</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article><article itemscope itemtype="http://schema.org/NewsArticle" class="article destacada article--columns post-847649 post type-post status-publish format-standard has-post-thumbnail hentry category-destacada category-entret category-esreal category-zlider tag-bikini tag-camila-araiza tag-instagram tag-raul-araiza" ><div class="row"><div class="col-sm-5" data-column="image"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--square"><button
+						data-dialog="share--dialog"
+						data-title="Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-raul-araiza-instagram-camila-araiza.png"
+						data-url="http://bit.ly/2n9Ev51"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><a class="article__image__link " href="https://eldeforma.com/2019/09/25/raul-araiza-camila-araiza-reclamo-foto-instagram/" title="Continuar leyendo : Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas" rel="bookmark"><span class="article__tax__label article__link__category" ><span>EsReal</span></span><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-raul-araiza-instagram-camila-araiza.png)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-raul-araiza-instagram-camila-araiza.png" width="820" alt="Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas" height="462" class="img-responsive"></a><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/09/cover-raul-araiza-instagram-camila-araiza.png"><meta itemprop="width" content="820"><meta itemprop="height" content="462"></figure></div><div class="col-sm-7" data-column="content"><header class="article__header "><h2 ><a href="https://eldeforma.com/2019/09/25/raul-araiza-camila-araiza-reclamo-foto-instagram/" title="Continuar leyendo : Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas" rel="bookmark"><span itemprop="headline">Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas</span></a></h2></header><div  class="article__content" ><p >¿Hace calor o soy yo?</p></div><footer class="article__footer clearfix  article__footer--bottomx clearfix"><ul class="article__footer--buttons"><li></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="facebook" data-title="Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas" data-url="http://bit.ly/2n9Ev51"><strong class="fa fa-facebook-official" aria-hidden="true"></strong><span>Facebook</span></button></li><li><button class="sharer btn btn--clean btn-sm" data-sharer="twitter" data-title="Raúl Araiza le hizo pancho en Instagram a su hija por andar subiendo fotos chabochas" data-url="http://bit.ly/2n9Ev51"><strong class="fa fa-twitter" aria-hidden="true"></strong><span>Twitter</span></button></li></ul></footer></div></div><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/raul-araiza-camila-araiza-reclamo-foto-instagram/"/>
+<meta itemprop="datePublished" content="2019-09-25T13:30:27-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T13:32:18-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Chipp</span>
 </span>
 <div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
 <a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
@@ -1278,7 +1191,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<script>
 		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1436230320809-3'); });
 	</script>
-</div></div></div></aside><aside id="spiga_social_counters-3" class="widget spiga_social_counters-3 widget--social-counts"><header class="widget__title"><h3><span>Encuéntranos en </span></h3></header><div class="widget__content"><div class="widget--content-inner"><div class="sp__socialcounts "><ul class="sp__socialcounts--list block-grid-xs-2 block-grid-sm-2 block-grid-md-2"><li class="block-grid-item"><span class="sp--fb-cn "><a class="sp__socialcounts--facebook" href="" rel="external" title=""><i class="fa fa-facebook"></i> <span class="hldr"><span class="num"></span> <small class="text">Likes</small></span></a></span></li><li class="block-grid-item"><span class="sp--tw-cn "><a class="sp__socialcounts--twitter" href="https://twitter.com/eldeforma" rel="external" title="@eldeforma"><i class="fa fa-twitter"></i> <span class="hldr"><span class="num">+<strong>591.7</strong><em>K</em>    </span> <small class="text">Seguidores </small></span></a></span></li></ul></div></div></div></aside><aside id="spiga_latest_cartoons-4" class="widget spiga_latest_cartoons-4 widget--posts widget--cartoons "><header class="widget__title"><h3><span>Caricaturas recientes</span></h3></header><div class="widget__content"><div class="widget__content__inner"><ul class="posts__list block-grid-xs-1 block-grid-sm-2 block-grid-md-1"><li class="block-grid-item"><article itemscope itemtype="http://schema.org/NewsArticle" class="article caricaturas article--card post-836949 post type-post status-publish format-standard has-post-thumbnail hentry category-caricaturas category-comercial category-destacada category-nsfw category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/09/como-sera-tu-futuro-si-no-ahorras/" title="Continuar leyendo : El Doc Emilio Braun te explica cómo será tu futuro si no guardas para tu retiro" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--rectangle"><button
+</div></div></div></aside><aside id="spiga_social_counters-3" class="widget spiga_social_counters-3 widget--social-counts"><header class="widget__title"><h3><span>Encuéntranos en </span></h3></header><div class="widget__content"><div class="widget--content-inner"><div class="sp__socialcounts "><ul class="sp__socialcounts--list block-grid-xs-2 block-grid-sm-2 block-grid-md-2"><li class="block-grid-item"><span class="sp--fb-cn "><a class="sp__socialcounts--facebook" href="" rel="external" title=""><i class="fa fa-facebook"></i> <span class="hldr"><span class="num"></span> <small class="text">Likes</small></span></a></span></li><li class="block-grid-item"><span class="sp--tw-cn "><a class="sp__socialcounts--twitter" href="https://twitter.com/eldeforma" rel="external" title="@eldeforma"><i class="fa fa-twitter"></i> <span class="hldr"><span class="num">+<strong>591.9</strong><em>K</em>    </span> <small class="text">Seguidores </small></span></a></span></li></ul></div></div></div></aside><aside id="spiga_latest_cartoons-4" class="widget spiga_latest_cartoons-4 widget--posts widget--cartoons "><header class="widget__title"><h3><span>Caricaturas recientes</span></h3></header><div class="widget__content"><div class="widget__content__inner"><ul class="posts__list block-grid-xs-1 block-grid-sm-2 block-grid-md-1"><li class="block-grid-item"><article itemscope itemtype="http://schema.org/NewsArticle" class="article caricaturas article--card post-848059 post type-post status-publish format-standard has-post-thumbnail hentry category-caricaturas category-comercial category-destacada category-nsfw category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/25/metodos-para-superar-tus-retos/" title="Continuar leyendo : 5 desesperados métodos en los que caes para superar tus retos" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--rectangle"><button
+						data-dialog="share--dialog"
+						data-title="5 desesperados métodos en los que caes para superar tus retos"
+						data-image="https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite-1024x538.jpg"
+						data-url="https://eldeforma.com?p=0"
+						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite-1024x538.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite-1024x538.jpg" width="1024" alt="5 desesperados métodos en los que caes para superar tus retos" height="538" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2010/09/covercamposbbvasite.jpg"><meta itemprop="width" content="1200"><meta itemprop="height" content="630"></figure><header class="article__header "><h2 ><span itemprop="headline">5 desesperados métodos en los que caes para superar tus retos</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/09/25/metodos-para-superar-tus-retos/"/>
+<meta itemprop="datePublished" content="2019-09-25T17:00:25-05:00"/>
+<meta itemprop="dateModified" content="2019-09-25T17:00:25-05:00"/>
+<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
+<span itemprop="name">Yado</span>
+</span>
+<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
+<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
+<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
+<meta itemprop="width" content="1200">
+<meta itemprop="height" content="630">
+</div>
+<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
+</div>
+</article></li><li class="block-grid-item"><article itemscope itemtype="http://schema.org/NewsArticle" class="article caricaturas article--card post-836949 post type-post status-publish format-standard has-post-thumbnail hentry category-caricaturas category-comercial category-destacada category-nsfw category-zlider" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/09/09/como-sera-tu-futuro-si-no-ahorras/" title="Continuar leyendo : El Doc Emilio Braun te explica cómo será tu futuro si no guardas para tu retiro" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--rectangle"><button
 						data-dialog="share--dialog"
 						data-title="El Doc Emilio Braun te explica cómo será tu futuro si no guardas para tu retiro"
 						data-image="https://cdn.eldeforma.com/wp-content/uploads/2010/07/cover2-2.jpg"
@@ -1349,27 +1283,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-jake.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-jake.jpg" width="600" alt="Guía básica para entrenar a tu perrito" height="400" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-jake.jpg"><meta itemprop="width" content="600"><meta itemprop="height" content="400"></figure><header class="article__header "><h2 ><span itemprop="headline">Guía básica para entrenar a tu perrito</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/08/19/guia-basica-para-entrenar-tu-perrito/"/>
 <meta itemprop="datePublished" content="2019-08-19T13:42:00-05:00"/>
 <meta itemprop="dateModified" content="2019-08-19T13:42:29-05:00"/>
-<span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
-<span itemprop="name">Teki</span>
-</span>
-<div class="hidden" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-<a href="https://eldeforma.com/" itemprop="url">https://eldeforma.com/</a>
-<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-<img src="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png" class="img-responsive" />
-<meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/eldeforma-sd-logo.png">
-<meta itemprop="width" content="1200">
-<meta itemprop="height" content="630">
-</div>
-<meta itemprop="name" content="El Deforma - Un no-ticiero de verdad">
-</div>
-</article></li><li class="block-grid-item"><article itemscope itemtype="http://schema.org/NewsArticle" class="article caricaturas article--card post-821295 post type-post status-publish format-standard has-post-thumbnail hentry category-caricaturas tag-dewey tag-francis tag-malcolm tag-malcolm-el-de-enmedio tag-series" ><a class="article__link article__link--out " href="https://eldeforma.com/2019/08/19/lecciones-de-vida-por-malcolm-el-de-enmedio/" title="Continuar leyendo : Lecciones de vida por &#8220;Malcolm el de enmedio&#8221;" rel="bookmark"><figure itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="article__img article__img--rectangle"><button
-						data-dialog="share--dialog"
-						data-title="Lecciones de vida por &#8220;Malcolm el de enmedio&#8221;"
-						data-image="https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-malcolm.jpg"
-						data-url="https://eldeforma.com?p=0"
-						class="btn article__share--btn dialog-open "><strong class="fa fa-share"></strong></button><span class="article__img--cvr" style="background-image:url(https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-malcolm.jpg)"></span><img src="https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-malcolm.jpg" width="600" alt="Lecciones de vida por &#8220;Malcolm el de enmedio&#8221;" height="400" class="img-responsive"><meta itemprop="url" content="https://cdn.eldeforma.com/wp-content/uploads/2019/08/cover-malcolm.jpg"><meta itemprop="width" content="600"><meta itemprop="height" content="400"></figure><header class="article__header "><h2 ><span itemprop="headline">Lecciones de vida por &#8220;Malcolm el de enmedio&#8221;</span></h2></header></a><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://eldeforma.com/2019/08/19/lecciones-de-vida-por-malcolm-el-de-enmedio/"/>
-<meta itemprop="datePublished" content="2019-08-19T13:35:19-05:00"/>
-<meta itemprop="dateModified" content="2019-08-19T13:35:19-05:00"/>
 <span class="hidden" itemprop="author" itemscope itemtype="https://schema.org/Person">
 <span itemprop="name">Teki</span>
 </span>
@@ -1481,12 +1394,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div class="dialog__overlay"></div>
 	<div class="dialog__content">
 		<header class="dialog__header">
-			<h3>Compartir <strong>Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula</strong></h3>
+			<h3>Compartir <strong>¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia</strong></h3>
 		</header>
 		<div class="dialog__content_image">
 
 			<div class="dialog__send">
-				<div class="fb-send" data-href="https://eldeforma.com/2019/09/24/palomitas-reglas-basicas-para-ir-al-cine-comida/"></div>
+				<div class="fb-send" data-href="https://eldeforma.com/2019/09/25/yalitza-aparicio-estrena-novio-foto-instagram/"></div>
 			</div>
 			<figure class="article--image">
 				<span class="img--cvr" style="background-image: url(https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/images/default.png)"></span>
@@ -1509,7 +1422,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<button
 							class="sharer button share--btn-twitter"
 							data-sharer="twitter"
-							data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula"
+							data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia"
 							data-url="https://eldeforma.com?p=0">
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 							<span>Compartir en</span> <strong>Twitter</strong>						</button>
@@ -1525,7 +1438,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<button
 							class="sharer button share--btn-whatsapp"
 							data-sharer="whatsapp"
-							data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula"
+							data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia"
 							data-url="https://eldeforma.com?p=0">
 							<i class="ion-social-whatsapp" aria-hidden="true"></i>
 							<span>Compartir en</span> <strong>WhatsApp</strong>						</button>
@@ -1552,7 +1465,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<button
 							class="sharer button share--btn-pinterest"
 							data-sharer="pinterest"
-							data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula"
+							data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia"
 							data-url="https://eldeforma.com?p=0">
 							<i class="ion-social-pinterest" aria-hidden="true"></i>
 							<span>Compartir en</span> <strong>Pinterest</strong>						</button>
@@ -1561,9 +1474,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<button
 							class="sharer button share--btn-yahoo"
 							data-sharer="email"
-							data-title="Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula"
+							data-title="¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia"
 							data-url="https://eldeforma.com?p=0"
-							data-subject="Hey! Checa esto : Sacarán del cine a personas que se acaben sus palomitas antes de que empiece la pelicula"
+							data-subject="Hey! Checa esto : ¡Ay Papantla! Yalitza ya trae novio y tú te sigues carcomiendo en envidia"
 							data-to="some@email.com">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 							<span>Compartir por</span> <strong>E-mail</strong>						</button>
@@ -1589,7 +1502,7 @@ var sticky_anything_engage = {"element":"#banner--top","topspace":"0","minscreen
 <script type='text/javascript' src='https://cdn.eldeforma.com/wp-content/plugins/sticky-menu-or-anything-on-scroll/assets/js/stickThis.js?ver=2.1.1'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var vars = {"uri":"https:\/\/eldeforma.com\/wp-content\/themes\/eldeforma-v2","ajax_page":"1","ajax_ppp":"10","ajax_uri":"https:\/\/eldeforma.com\/wp-admin\/admin-ajax.php","nonce":"808e09b747","success":"Revisa tu correo para completar subscripci\u00f3n","error":"Ya estas inscrito","error2":"Email inv\u00e1lido","prev":"Anterior","next":"Siguiente","comment":"Comentario","comments":"Comentarios","load_num":"4","loading":"Cargando m\u00e1s entradas","all_loaded":"Todos los post han sido cargados","checkout":"Hey! Checa esto :","copy":"Copiar","copied":"Copiado","bookmark_nonce":"a1acdfd86c","bookmark_already":"Entrada marcada como favorita","bookmark_removed":"Eliminar de tus favoritos","bookmark_error":"Lo sentimos, hubo un problema procesando tu requerimiento"};
+var vars = {"uri":"https:\/\/eldeforma.com\/wp-content\/themes\/eldeforma-v2","ajax_page":"1","ajax_ppp":"10","ajax_uri":"https:\/\/eldeforma.com\/wp-admin\/admin-ajax.php","nonce":"930a5bd15d","success":"Revisa tu correo para completar subscripci\u00f3n","error":"Ya estas inscrito","error2":"Email inv\u00e1lido","prev":"Anterior","next":"Siguiente","comment":"Comentario","comments":"Comentarios","load_num":"4","loading":"Cargando m\u00e1s entradas","all_loaded":"Todos los post han sido cargados","checkout":"Hey! Checa esto :","copy":"Copiar","copied":"Copiado","bookmark_nonce":"a4288c7110","bookmark_already":"Entrada marcada como favorita","bookmark_removed":"Eliminar de tus favoritos","bookmark_error":"Lo sentimos, hubo un problema procesando tu requerimiento"};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://cdn.eldeforma.com/wp-content/themes/eldeforma-v2/dist/scripts/main-399eb99143.js'></script>
