@@ -1520,7 +1520,8 @@ var td_ad_background_click_target="";
 				console.log('impressionViewable:');
 				console.log(event.slot);
 			});
-			googletag.pubads().addEventListener('slotVisibilityChangedEvent', function(event) {
+
+      googletag.pubads().addEventListener('SlotVisibilityChangedEvent', function(event) {
 				console.log("*******googletag Event*********")
 				console.log('slotVisibilityChangedEvent:');
 				console.log(event.slot);
