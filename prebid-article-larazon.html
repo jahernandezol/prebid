@@ -1149,8 +1149,8 @@ var td_ad_background_click_target="";
 <script async src='https://www.razon.com.mx/wp-includes/js/prebid2.33.0.js?d'></script>
     <script>
 
-var pbjs = pbjs || {};
-            pbjs.que = pbjs.que || [];
+    var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
 
             var adUnits = [{
                 code: 'video1',
@@ -1173,16 +1173,28 @@ var pbjs = pbjs || {};
 	    }];
 
 
-pbjs.que.push(function () {
-    pbjs.addAdUnits(videoAdUnits);
-    pbjs.requestBids({
-        timeout: 3000,
-        bidsBackHandler: function (bids) {
-            var highestCpmBids = pbjs.getHighestCpmBids('video1');
-            pbjs.renderAd(document, highestCpmBids[0].adId);
-        }
-    });
-});
+      pbjs.que.push(function() {
+
+          pbjs.addAdUnits(adUnits);
+          pbjs.requestBids({
+              bidsBackHandler: initAdserver
+          });
+      });
+
+      function initAdserver() {
+          if (pbjs.initAdserverSet) return;
+          pbjs.initAdserverSet = true;
+          googletag.cmd.push(function() {
+              pbjs.que.push(function() {
+                  pbjs.setTargetingForGPTAsync();
+                  googletag.pubads().refresh();
+              });
+          });
+      }
+
+      setTimeout(function() {
+          initAdserver();
+      }, PREBID_TIMEOUT);
 </script>
 <!-- SE SOLICITÓ MEDIO PARA DESACTIVAR PUBLICIDAD EN CIERTOS ADS EL 29-10-2018 POR IS -->
     <script type='text/javascript'>
@@ -1468,6 +1480,7 @@ pbjs.que.push(function () {
 			*/
 			googletag.defineSlot('/115004372/razon_footer', [[300,50],[300,100],[320,50],[320,100],[468,60],[728,90],[960,90],[970,90],[300,50],[300,100],[320,50],[320,100],[468,60],[728,90],[970,90]], 'addpixel').addService(googletag.pubads())
 			googletag.defineSlot('/115004372/larazon_fo_home', [[1,1]], 'f_addpixel').addService(googletag.pubads())
+
 			/*
 			 *	<!-- FIN CAMBIOS PUBLICIDAD JUE 17 ENE 2019 V 1.01 -->
 			 */
@@ -1490,9 +1503,11 @@ pbjs.que.push(function () {
 			 * 20NOV2018
 			 * encabezado.txt
 			 * */
-			googletag.pubads().enableSingleRequest(true);
-			googletag.pubads().collapseEmptyDivs(false);
-			googletag.enableServices();
+       var slot1 = googletag.defineSlot('/2815215/prebid/infeed-article', [[1, 1]], 'video1').addService(googletag.pubads());
+       googletag.pubads().disableInitialLoad();
+       googletag.pubads().enableSingleRequest();
+       googletag.enableServices();
+
 			console.log('termina googletag.defineSlot');
 			googletag.pubads().addEventListener('slotRenderEnded', function(event) {
 				console.log("*******googletag Event*********")
@@ -2663,9 +2678,17 @@ input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus {bor
 		      s.parentNode.insertBefore(st, s);
 		    })();
 		</script>
-		            <div id='video1'>
-                <p></p>
-            </div><script type='text/javascript'>
+          <div id='video1'>
+              <p>Prebid Outstream Video Ad</p>
+              <script type='text/javascript'>
+                  googletag.cmd.push(function() {
+                      googletag.display('video1');
+                  });
+
+              </script>
+          </div>
+
+            <script type='text/javascript'>
 /* <![CDATA[ */
 var thickboxL10n = {"next":"Siguiente >","prev":"< Anterior","image":"Imagen","of":"de","close":"Cerrar","noiframes":"Esta funci\u00f3n requiere de frames insertados. Tienes los iframes desactivados o tu navegador no los soporta.","loadingAnimation":"https:\/\/www.razon.com.mx\/wp-includes\/js\/thickbox\/loadingAnimation.gif"};
 /* ]]> */
