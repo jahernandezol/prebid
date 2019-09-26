@@ -14,10 +14,6 @@
             var googletag = googletag || {};
             googletag.cmd = googletag.cmd || [];
 
-            googletag.cmd.push(function() {
-              googletag.pubads().disableInitialLoad();
-            });
-
             var PREBID_TIMEOUT = 3000;
 
             var adUnits = [{
@@ -76,6 +72,7 @@
 
             googletag.cmd.push(function() {
                 var slot1 = googletag.defineSlot('/2815215/prebid/infeed-article', [[1, 1]], 'video1').addService(googletag.pubads());
+                googletag.pubads().disableInitialLoad();
                 googletag.pubads().enableSingleRequest();
                 googletag.enableServices();
             });
