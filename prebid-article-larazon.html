@@ -1509,6 +1509,7 @@ var td_ad_background_click_target="";
        googletag.enableServices();
 
 			console.log('termina googletag.defineSlot');
+
 			googletag.pubads().addEventListener('slotRenderEnded', function(event) {
 				console.log("*******googletag Event*********")
 				console.log('slotRenderEnded:');
@@ -1522,11 +1523,6 @@ var td_ad_background_click_target="";
 			googletag.pubads().addEventListener('slotVisibilityChangedEvent', function(event) {
 				console.log("*******googletag Event*********")
 				console.log('slotVisibilityChangedEvent:');
-				console.log(event.slot);
-			});
-			googletag.pubads().addEventListener('slotVisibilityChangedEvent', function(event) {
-				console.log("*******googletag Event*********")
-				console.log('SlotOnloadEvent:');
 				console.log(event.slot);
 			});
 	  });
