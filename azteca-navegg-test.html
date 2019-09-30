@@ -1,0 +1,3432 @@
+
+<!DOCTYPE html>
+<html class="Page" lang="es" itemscope itemtype="http://schema.org/WebPage">
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Roboto:400,700" rel="stylesheet">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://tv-azteca-brightspot-lower.s3.amazonaws.com/resource/0000016b-0aa3-d497-abff-dfa761910000/styleguide/All.min.34c4253ca987cd40beb631300ffb3ce4.gz.css">
+<link rel="stylesheet" href="https://tv-azteca-brightspot-lower.s3.amazonaws.com/resource/0000016b-0aa3-d497-abff-dfa761910000/fontawesome-pro-5.8.1-web/css/all.min.2d40585ccd8fbdc943a55b24c66a7d8b.gz.css">
+<style data-theme-colors>
+  :root {
+    /* general */
+    --generalTextColor: #14171a;
+    --mainThemeColor: #654089;
+    --linkColor: var(--mainThemeColor);
+    --linkHoverColor: var(--linkColor);
+    --leaderboardBgColor: #1f242f;--placeholderImagePath: url('https://uat.tv-azteca.psdops.com/dims4/default/c3eb298/2147483647/strip/true/crop/500x333+0+83/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F0d%2Fcd%2Fcc15ee374dd8979a2af3a9a14d11%2Fplaceholder.jpeg');
+
+    --moduleTextHighlightColor: #3a5399;
+    --moduleTextHighlightColorOnDark: #a58bdd;
+
+    --moduleTextColor: #34495e;
+    --moduleTextColorOnDark: #fff;
+
+    --moduleTitleColor: #654089;
+    --moduleTitleColorOnDark: #fff;
+    --moduleTitleScheduleColor: var(--moduleTitleColor);
+    --moduleTitleScheduleColorOnDark: var(--moduleTitleColorOnDark);
+
+    --surveyNameBgColor: var(--mainThemeColor);
+    --marcadorPromoColor1: #c65a63;
+    --marcadorPromoColor2: #3c87e6;
+
+    --ctaBgHover1: #a58bdd;
+    --ctaBgHover2: #654089;
+    --ctaTextHover: #fff;
+
+    --navbarPromoteButtonBgColor: #b02756;
+    --navbarPromoteButtonBgColor2: #e62a55;
+    --navbarBgColor: #332255;
+    --navbarLinksColor: #fff;
+    --navbarLinksUnderlineColor: #9e57e2;
+
+    --portalNavbarBgColor1: #564f5c;
+    --portalNavbarBgColor2: #2b3647;
+    --portalNavbarLinksColor: #fff;
+
+    --footerGeneralTextColor: #fefefe;
+    --footerLinkColor: #3ab564;
+    --footerLinkHoverColor: #ffffff;
+    --footerNavLinkColor: var(--footerGeneralTextColor);
+    --footerTextHighlightColor: var(--footerLinkColor);
+    --footerBgColor: #1f0e32;
+    --footerBorderColor: rgba(254, 254, 254, 0.2);
+
+    --logoTextColor: var(--navbarLinksColor);
+    ;
+    --sectionNavbarBgColor: var(--sectionNavbarBgColorDefault, --navbarBgColor, --mainThemeColor);
+  }
+
+</style>
+
+
+    <style>.CreativeWorkPage-titleExtra {
+	color: var(--navbarLinksColor) !important;
+}
+
+@media only screen and (min-width: 768px) {
+  	header.Page-header-show .MainNavigation,
+	header.Page-header-show .MainNavigation-search-trigger:before {
+		color: var(--navbarLinksColor) ;
+    }
+}
+
+
+.MainNavigation-search-trigger:before {
+    color: var(--navbarLinksColor);
+}</style>
+<style>.ListaConMarcador-items-item.counter .Promo-media {
+    display: none;
+}</style>
+<style>.Floating {
+    width: unset;
+    height: unset;
+    position: unset;
+    background: unset;
+    top: unset;
+    left: unset;
+    z-index: unset;
+}
+
+.Floating-ad {
+    position: fixed;
+    z-index: 9999;
+    /*
+    top: unset;
+    left: unset;
+    transform: unset;*/
+}
+
+.Floating-ad-close {
+	display: none;
+}
+</style>
+<style>.headModule .KalturaVideoPlayer {
+ 	width: 1024px;
+    max-width: 100%;
+}
+
+.headModule .KalturaVideoPlayer-screen {
+	width: 100%;
+}</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TV Azteca</title>
+
+
+    <link rel="canonical" href="https://uat.tv-azteca.psdops.com/"><meta name="brightspot.contentId" content="0000016b-dd11-d61d-a7ef-ff3bd6440000">
+
+    <meta property="og:url" content="https://uat.tv-azteca.psdops.com/">
+<meta property="og:image" content="">
+
+
+<meta property="og:image:url" content="">
+<meta name="thumbnail" content="">
+
+
+<meta property="og:image:width" content="">
+<meta property="og:image:height" content="">
+    <meta property="og:image:type" content="image">
+
+
+    <meta property="og:site_name" content="TV Azteca">
+
+
+    <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="twitter:site" content="@Azteca/"/>
+
+
+
+
+
+
+
+
+    <link rel="apple-touch-icon"sizes="180x180"href="/apple-touch-icon.png">
+<link rel="icon"type="image/png"href="/favicon-32x32.png">
+<link rel="icon"type="image/png"href="/favicon-16x16.png">
+
+
+
+<link type="application/rss+xml" rel="alternate" title="TV Azteca" href="https://uat.tv-azteca.psdops.com/index.rss">
+
+
+
+    <script>
+  /**
+  * The following uses user agent detection to ensure that
+  * baseline polyfills that are only needed by IE11
+  * are only loaded by IE11, synchronously. It will then load All.min.js
+  * for both the evergreen browsers and IE11.
+  */
+  (function () {
+    /**
+      * Adds a script tag to the head of the document.
+      *
+      * @param url The url of the script to add
+      * @param isNotAsync True If the script should NOT be loaded asynchronously.
+      *   Dynamically created scripts are by default aync === true.
+      */
+    function addScript(url, isNotAsync) {
+      var script = document.createElement('script');
+      script.setAttribute('src', url);
+      if (isNotAsync) {
+        script.async = false
+      } else {
+        script.async = true
+        script.setAttribute('async', true)
+      }
+      document.head.appendChild(script);
+    }
+    var ua = window.navigator.userAgent;
+    var isTrident = ua.match('Trident/7.0');
+    var isEdge = document.documentMode || /Edge/.test(ua);
+    if (isTrident || isEdge) {
+        addScript("https://tv-azteca-brightspot-lower.s3.amazonaws.com/resource/0000016b-0aa3-d497-abff-dfa761910000/styleguide/All.IE.min.677aecd886cb29dac9eb927caa2c5ce3.gz.js", true);
+    }
+    addScript("https://tv-azteca-brightspot-lower.s3.amazonaws.com/resource/0000016b-0aa3-d497-abff-dfa761910000/styleguide/All.min.6ff2bb7a3baf55d1498b0dd2ea3ad0c1.gz.js", isTrident);
+  })();
+</script>
+
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script async="async" src="//static.azteca.com/portal/scripts/prebid2.1.0.js"></script>
+<script type="text/javascript">
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    googletag.cmd.push(function () {
+        googletag.pubads().disableInitialLoad()
+        googletag.pubads().enableVideoAds()
+        googletag.companionAds().setRefreshUnfilledSlots(false)
+
+        (function(w) {
+            try {
+                var name, col, persona = JSON.parse(window.localStorage.getItem("nvgpersona39306"));
+                for (col in persona) {
+                    name = "nvg_" + col;
+                    name = name.substring(0, 10);
+                    if (typeof(googletag) == "object")
+                        googletag.pubads().setTargeting(name, persona[col]);
+                    if (typeof(GA_googleAddAttr) == "function")
+                        GA_googleAddAttr(name, persona[col]);
+                }
+            } catch (e) {}
+        })(window)
+        /*googletag.pubads().enableLazyLoad({
+            fetchMarginPercent: 130,  // Fetch slots within 5 viewports.
+            renderMarginPercent: 130,  // Render slots within 2 viewports.
+            mobileScaling: 2.0  // Double the above values on mobile.
+        })*/
+    })
+
+</script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    pageViewData = {};
+    pageViewData.site = {};
+    pageViewData.page = {};
+
+     pageViewData.site.name='TV Azteca';
+    pageViewData.page.section='no-section';
+    pageViewData.page.parentSection='no-parentSection';
+     pageViewData.page.pageType='Homepage';
+    pageViewData.page.tags=[ 'no-tags'];
+
+    dataLayer.push(pageViewData);
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-K2JL7W7');</script>
+    <!-- End Google Tag Manager -->
+
+
+<script>/*var adz = (function () {
+    var attrRegular = ['data-slot-name'];
+	var attrVast = ['data-ima-adtagurl', 'data-adtag'];
+	function cambiaRegular (from, to, attr) {
+		var elAds = [...document.querySelectorAll(`[${attr}='${from}']`)];
+		elAds.forEach(function (elAd) {
+			elAd.setAttribute(attr, to);
+        });
+    }
+	function cambiaVast(from, to, attr) {
+		var elVasts = [...document.querySelectorAll(`[${attr}]`)];
+		elVasts.forEach(function (elVast) {
+			var elAdUrl = elVast.getAttribute(attr);
+			var elAdUnit = elAdUrl.match(/iu=([^&]*)/)
+			elAdUnit = elAdUnit.length ? elAdUnit[1] : false
+			if (elAdUnit && elAdUnit  === from) {
+				var newAdUnit = elAdUrl.replace(/(iu=)[^\&]+/, '$1' +to)
+				elVast.setAttribute(attr, newAdUnit)
+            }
+        });
+    }
+	function cambia (from, to) {
+		if (from && to) {
+			attrRegular.forEach(function(attr) {
+				cambiaRegular(from, to, attr);
+            })
+			attrVast.forEach(function(attr) {
+				cambiaVast(from, to, attr);
+            })
+
+        }
+    }
+	function info () {
+		var elAd = document.querySelector(`[${attrRegular}]`);
+		if (elAd) {
+			return elAd.getAttribute(attrRegular);
+        }
+    }
+	return {
+		cambia: cambia,
+		info: info
+    }
+})()*/</script>
+<script>document.addEventListener('DOMContentLoaded', function () {
+	var elEnVivoBtn = document.querySelector('.MainNavigation-promote span.Link')
+	var elEnVivoRef = document.querySelector('.PromoProgramacion .Promo-enVivo a.Link')
+	if (elEnVivoBtn && elEnVivoRef) {
+		var elAnchor = document.createElement('a')
+    	elAnchor.className = 'Link'
+    	elAnchor.href = elEnVivoRef.href
+    	elAnchor.innerHTML = elEnVivoBtn.innerHTML
+    	elEnVivoBtn.replaceWith(elAnchor)
+	}
+})</script>
+<script>var metaTag = document.createElement('meta');
+metaTag.setAttribute('name', 'google-site-verification');
+metaTag.setAttribute('content', 'nYmHed9H3E4eSRBm678xH6tqKNktk8cjET7yTFPv9j0');
+var headElement = document.querySelector('head');
+headElement.append(metaTag);</script>
+<script>    window._seedtagq = window._seedtagq || [];
+    window._seedtagq.push(['_setId', '2925-6189-01']);
+    (function () {
+      var st = document.createElement('script');
+      st.type = 'text/javascript';
+      st.async = true;
+      st.src = ('https:' == document.location.protocol
+        ? 'https'
+        : 'http') + '://config.seedtag.com/loader.js?v=' + Math.random();
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(st, s);
+    })();</script>
+
+</head>
+
+
+        <body class="Page-body">
+
+
+    <div class="Page-leaderboardAd" data-modulewell><div data-module id="googleAdd8a884b1-1bd8-4ee0-861c-e8cef520dbb0" class="GoogleDfpAd" data-slot-name='/29782907/TVAzteca/TVAzteca-home' data-slot-sizes='[[320, 50], [728, 90]]' data-slot-adSizeMap='[[[320, 0], [320, 50]], [[768, 0], [728, 90]], [[1024, 0], [950, 90], [728, 90]]]' data-targeting='["Pos",["FullSup"]]' data-prebidbidsjson='[{"bidder":"appnexus","params":{"placementId":16684121}},{"bidder":"smartadserver","params":{"domain":"https://prg.smartadserver.com","siteId":320836,"pageId":1142725,"formatId":79584}},{"bidder":"rubicon","params":{"accountId":"15150","siteId":"282696","zoneId":"1413194","sizes":[2,43,57]}}]'>
+</div>
+</div>
+
+
+<nav class="PortalNavigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+
+        <ul class="PortalNavigation-items">
+
+                <li class="PortalNavigation-items-item" data-current-nav-item><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/">TV Azteca</a>
+
+    </div>
+
+</div>
+</li>
+
+                <li class="PortalNavigation-items-item" ><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/aztecauno/">Azteca Uno </a>
+
+    </div>
+
+</div>
+</li>
+
+                <li class="PortalNavigation-items-item" ><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/azteca7/">Azteca 7</a>
+
+    </div>
+
+</div>
+</li>
+
+                <li class="PortalNavigation-items-item" ><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/aztecadeportes/">Deportes</a>
+
+    </div>
+
+</div>
+</li>
+
+                <li class="PortalNavigation-items-item" ><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/aztecanoticias/">Noticias </a>
+
+    </div>
+
+</div>
+</li>
+
+                <li class="PortalNavigation-items-item" ><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://www.adn40.mx/" target="_blank">ADN 40</a>
+
+    </div>
+
+</div>
+</li>
+
+                <li class="PortalNavigation-items-item" ><div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/amastv/">a+7.2</a>
+
+    </div>
+
+</div>
+</li>
+
+        </ul>
+
+</nav>
+
+
+
+    <header class="Page-header">
+    <div class="Page-header-drawer">
+
+
+
+    <div class="Page-logo"><a href="https://uat.tv-azteca.psdops.com/">
+    <picture>
+
+            <source width="197"
+                height="46"
+                srcset="https://uat.tv-azteca.psdops.com/dims4/default/1db3efc/2147483647/strip/true/crop/300x70+0+0/resize/394x92!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F2e%2F49%2Ff0767f2145beb103a55731772bde%2Fnav-logo.png 2x"
+                media="(min-width: 1023px)" />
+
+        <img class="PageLogo-image" src="https://uat.tv-azteca.psdops.com/dims4/default/b388c64/2147483647/strip/true/crop/300x70+0+0/resize/197x46!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F2e%2F49%2Ff0767f2145beb103a55731772bde%2Fnav-logo.png" />
+
+    </picture>
+</a>
+</div>
+
+
+
+
+
+
+
+    <div class="MainNavigation-items-trigger" data-navtoggle-trigger><span></span></div>
+
+
+
+    <nav class="MainNavigation-promote " data-envivo-off>
+        <span class="Link" >En Vivo</span>
+
+
+            <ul class="ListEnVivoTicker-items">
+
+                    <li class="ListEnVivoTicker-items-item active">
+                        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show/envivo">Todo un show</a>
+                    </li>
+
+                    <li class="ListEnVivoTicker-items-item ">
+                        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/kidsiete/envivo">Kidsiete</a>
+                    </li>
+
+            </ul>
+
+    </nav>
+
+
+
+    <div class="MainNavigation-search-trigger" data-searchtoggle-trigger></div>
+
+
+
+
+<div class="MainNavigation-drawer">
+    <div class="MainNavigation-drawer-scroll">
+        <nav class="MainNavigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+
+                <ul class="MainNavigation-items">
+
+                        <li class="MainNavigation-items-item" data-nav-item="0" data-current-nav-item>
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/">Inicio</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                        <li class="MainNavigation-items-item" data-nav-item="1" >
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/galerias">Galerías</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                        <li class="MainNavigation-items-item" data-nav-item="2" >
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-voz">La Voz</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                        <li class="MainNavigation-items-item" data-nav-item="3" >
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/azteca7/resistire">Resistiré</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                        <li class="MainNavigation-items-item" data-nav-item="4" >
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://www.adn40.mx/videoteca/opinion/" target="_blank">Barra de Opinión</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                        <li class="MainNavigation-items-item" data-nav-item="5" >
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/a-quien-corresponda">A Quien Corresponda</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                        <li class="MainNavigation-items-item" data-nav-item="6" >
+                            <div class="NavigationItem" >
+    <div class="NavigationItem-text">
+
+            <a class="NavigationItem-text-link" href="https://uat.tv-azteca.psdops.com/todos-nuestros-programas">Más programas</a>
+
+    </div>
+
+</div>
+
+                        </li>
+
+                </ul>
+
+            <div class="MainNavigation-paginators"></div>
+        </nav>
+
+
+
+
+            <form class="MainNavigation-search" action="https://uat.tv-azteca.psdops.com/busqueda" novalidate="" autocomplete="off" data-searchtoggle>
+                <div class="MainNavigation-search-inputs">
+                    <div class="MainNavigation-search-inputs-main">
+                        <input type="text" class="MainNavigation-search" name="q" placeholder="¿Qué estás buscando?">
+                        <button type="submit" class="MainNavigation-search">searchButtonLabel</button>
+                    </div>
+                </div>
+            </form>
+
+    </div>
+</div>
+
+
+    <div class="MainNavigation-subitems-wrap">
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="0"></ul>
+            </div>
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="1"></ul>
+            </div>
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="2"></ul>
+            </div>
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="3"></ul>
+            </div>
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="4"></ul>
+            </div>
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="5"></ul>
+            </div>
+
+            <div class="MainNavigation-subitems">
+                <ul class="MainNavigation-subitems-items" data-nav-subitems="6"></ul>
+            </div>
+
+    </div>
+
+
+
+    </div>
+
+</header>
+
+
+
+
+    <div class="Floating">
+        <div class="Floating-ad">
+            <div data-module id="googleAdbab45553-8e21-469b-a7f3-6c5a3770ca01" class="GoogleDfpAd" outofpage='true' data-slot-name='/29782907/TVAzteca/TVAzteca-home' data-slot-sizes='[[1, 1]]' data-prebidbidsjson='[{"bidder":"appnexus","params":{"placementId":16684121}},{"bidder":"smartadserver","params":{"domain":"https://prg.smartadserver.com","siteId":320836,"pageId":1142725,"formatId":79584}},{"bidder":"rubicon","params":{"accountId":"15150","siteId":"282696","zoneId":"1413194","sizes":[2,43,57]}}]'>
+</div>
+
+            <div class="Floating-ad-close">
+                <div>&#10010;</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Page-top" >
+        <div class="Page-header-spacer"></div>
+
+
+        <main class="Page-main">
+            <article class="Page-mainContent" itemprop="mainEntity" itemscope itemtype="http://schema.org/Article">
+
+
+
+    <div data-modulewell>
+
+            <section class="LeadCarousel" data-module="padless"
+
+
+ >
+
+
+    <div class="LeadCarousel-wrap" data-leadcarousel-pagination-parent>
+        <ul class="LeadCarousel-items">
+
+                <li class="LeadCarousel-items-item">
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/notas/el-sexto-capitulo-de-mastercheflarevancha-estuvo-lleno-de-sorpresas-y-momentos-epicos-llegaron-los-mejores-memes-de-este-capitulo-te-vas-a-reir-de-todos">
+    <img alt="MASTERCHEF LA REVANCHA" width="1300" height="650"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/cee4e2c/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F25%2F72%2Fdec9ca984674bdac82b4149b77e4%2Fsitio-1-3.jpg 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/eb2a8e9/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F25%2F72%2Fdec9ca984674bdac82b4149b77e4%2Fsitio-1-3.jpg"
+        >
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/notas/el-sexto-capitulo-de-mastercheflarevancha-estuvo-lleno-de-sorpresas-y-momentos-epicos-llegaron-los-mejores-memes-de-este-capitulo-te-vas-a-reir-de-todos">El sexto capítulo de #MasterChefLaRevancha estuvo lleno de sorpresas y momentos épicos. ¡Llegaron LOS MEJORES MEMES de este capítulo! ¡Te vas a reír de todos!</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef">MasterChef</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras/capitulos/videos/rosario-tijeras-capitulo-27-rosario-y-el-angel-logran-explotar-el-laboratorio-de-arteaga-toxina-paga-las-consecuencias">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-117.jpg" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/4a5d0cb/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe7%2F9b%2F5a49ebba4432a83843686b4dd6f5%2Fcredito-super-4-tv-azteca-117.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/0e01722/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe7%2F9b%2F5a49ebba4432a83843686b4dd6f5%2Fcredito-super-4-tv-azteca-117.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras/capitulos/videos/rosario-tijeras-capitulo-27-rosario-y-el-angel-logran-explotar-el-laboratorio-de-arteaga-toxina-paga-las-consecuencias">Rosario Tijeras Capítulo 27: Rosario y El Ángel logran explotar el laboratorio de Arteaga, ¡Toxina paga las consecuencias! </a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras">Rosario Tijeras</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon/capitulos-1/videos/exatlon-mexico-capitulo-2-parte-1-famosos-y-contendientes-se-enfrentan-para-lograr-ganar-5-mil-dolares">
+    <img alt="Exatlón 2019
+" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/ac1806c/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fd8%2F30%2F53f50ff24eceae2cc7cc5e7462bf%2Fcap.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/90bc94f/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fd8%2F30%2F53f50ff24eceae2cc7cc5e7462bf%2Fcap.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon/capitulos-1/videos/exatlon-mexico-capitulo-2-parte-1-famosos-y-contendientes-se-enfrentan-para-lograr-ganar-5-mil-dolares">Exatlón México capítulo 2 parte 1: ¡Famosos y Contendientes se enfrentan para lograr ganar 5 mil dólares! </a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon">Exatlón</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/herreraelreality/cap-5-fotografia/videos/capitulo-5-el-chef-herrera-decide-hacer-una-carne-asada-en-el-mitico-can-de-la-huasteca-acompanado-de-tres-importantes-fotografos">
+    <img alt="HERRERA EL REALITY CAPITULO 5" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/afc918d/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F29%2Fherreraelreality-2333451.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/ff69395/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F29%2Fherreraelreality-2333451.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/herreraelreality/cap-5-fotografia/videos/capitulo-5-el-chef-herrera-decide-hacer-una-carne-asada-en-el-mitico-can-de-la-huasteca-acompanado-de-tres-importantes-fotografos">Capítulo 5. El Chef Herrera decide hacer una carne asada en el mítico Cañón de La Huasteca, acompañado de tres importantes fotógrafos.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/herreraelreality">HerreraElReality</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos/programas-completos/videos/programa-completo-del-20-de-agosto-de-2019-el-careo-de-bebeshita-y-yami-norber-responde-a-brandon-y-marian-recibio-una-sorpresa-de-alann">
+    <img alt="ena cap 200819" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/8887038/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F44%2Fb3%2Ff61b119d437086536b5ec3465d5e%2Fp1-1.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/c0ed227/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F44%2Fb3%2Ff61b119d437086536b5ec3465d5e%2Fp1-1.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos/programas-completos/videos/programa-completo-del-20-de-agosto-de-2019-el-careo-de-bebeshita-y-yami-norber-responde-a-brandon-y-marian-recibio-una-sorpresa-de-alann">Programa completo del 20 de agosto de 2019 | El careo de Bebeshita y Yami, Norber responde a Brandon y Marian recibió una sorpresa de Alann.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos">Enamorándonos</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando/especiales/videos/amor-de-lejos-michelle-saide-novia-de-tono-rosique-revela-en-exclusiva-si-habra-boda-con-el-conductor">
+    <img alt="Exclusiva Michelle Saide Ventaneando" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/22c20c0/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4b%2F48%2F79e7bcac45f492098385d86d30d3%2F767.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/c98458d/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4b%2F48%2F79e7bcac45f492098385d86d30d3%2F767.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando/especiales/videos/amor-de-lejos-michelle-saide-novia-de-tono-rosique-revela-en-exclusiva-si-habra-boda-con-el-conductor">¿AMOR DE LEJOS? Michelle Saide, novia de Toño Rosique, revela en EXCLUSIVA si habrá boda con el conductor.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando">Ventaneando</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="gallery"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/galerias-te-la-juegas/galerias/antonio-rosique-y-los-atletas-de-exatlon-retaron-a-la-banca-en-te-la-juegas-revive-los-momentos-mas-emocionantes-en-fotos">
+    <img alt="Te la Juegas Exatlón" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/69b1c33/2147483647/strip/true/crop/970x485+0+0/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F35%2F7f%2F1a17894442fd88241516055ab043%2F1.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/94a9e9a/2147483647/strip/true/crop/970x485+0+0/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F35%2F7f%2F1a17894442fd88241516055ab043%2F1.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/galerias-te-la-juegas/galerias/antonio-rosique-y-los-atletas-de-exatlon-retaron-a-la-banca-en-te-la-juegas-revive-los-momentos-mas-emocionantes-en-fotos">¡Antonio Rosique y los atletas de Exatlón retaron a La Banca en &quot;¿Te La Juegas?&quot;! Revive los momentos más emocionantes en fotos.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <span class="Link" >¿Te La Juegas?</span>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/colaboradores-y-expertos-vla/videos/extincion-de-tiburones-gerardo-del-villar-nos-hace-crear-consciencia-sobre-la-posible-extincion-de-este-animal-marino">
+    <img alt="Gerardo del Villar vla" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/13ae3be/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff5%2Fb5%2Fb28020634e389cdcc11039eec057%2Fvla-screen-03.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/fa52d24/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff5%2Fb5%2Fb28020634e389cdcc11039eec057%2Fvla-screen-03.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/colaboradores-y-expertos-vla/videos/extincion-de-tiburones-gerardo-del-villar-nos-hace-crear-consciencia-sobre-la-posible-extincion-de-este-animal-marino">¡Extinción de tiburones! Gerardo del Villar nos hace crear consciencia sobre la posible extinción de este animal marino.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria">Venga la Alegría</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show/mas-show/videos/por-fin-vemos-a-lucio-con-sus-ojitos-abiertos-laura-g-esta-disfrutando-al-maximo-su-etapa-de-lactancia">
+    <img alt="Vlog Laura G Todo Un Show" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/7de9802/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fff%2Fae%2F04ea3b2f434986d881cf79e87b62%2Ftus-screen-149.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/45c32d0/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fff%2Fae%2F04ea3b2f434986d881cf79e87b62%2Ftus-screen-149.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show/mas-show/videos/por-fin-vemos-a-lucio-con-sus-ojitos-abiertos-laura-g-esta-disfrutando-al-maximo-su-etapa-de-lactancia">¡Por fin vemos a Lucio con sus ojitos abiertos! Laura G está disfrutando al máximo su etapa de lactancia.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show">Todo un show</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-resolana-con-el-capi/los-mas-asoleados/videos/el-capi-participara-en-exatlon-el-conductor-de-la-resolana-sorprendio-al-hacer-su-presentacion-para-unirse-a-esta-competencia">
+    <img alt="lrs exatlón 180819" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/3615a9d/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff2%2F2e%2Fda91b8524f11aafea7efd3910cd7%2Flrs-screen-05.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/db52b46/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff2%2F2e%2Fda91b8524f11aafea7efd3910cd7%2Flrs-screen-05.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-resolana-con-el-capi/los-mas-asoleados/videos/el-capi-participara-en-exatlon-el-conductor-de-la-resolana-sorprendio-al-hacer-su-presentacion-para-unirse-a-esta-competencia">¿El Capi participará en Exatlón? El conductor de &#x27;La Resolana&#x27; sorprendió al hacer su presentación para unirse a esta competencia.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-resolana-con-el-capi">La Resolana con el Capi</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/extranormal-7/capitulos/videos/los-animales-tienen-una-percepcion-cosmica-y-astral-mas-amplia-podrian-predecir-desgracias-y-salvarnos-la-vida">
+    <img alt="Animales astrales.png" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/2792425/2147483647/strip/true/crop/1884x942+0+59/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4c%2Fd5%2F263064ed4102943c35d520880162%2Fanimales-astrales.png 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/03d1cca/2147483647/strip/true/crop/1884x942+0+59/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4c%2Fd5%2F263064ed4102943c35d520880162%2Fanimales-astrales.png" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/extranormal-7/capitulos/videos/los-animales-tienen-una-percepcion-cosmica-y-astral-mas-amplia-podrian-predecir-desgracias-y-salvarnos-la-vida">Los animales tienen una percepción cósmica y astral más amplia ¿podrían predecir desgracias y salvarnos la vida? </a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/extranormal-7">Extranormal 7</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/al-extremo/expediente-extremo/videos/nahuales-de-miedo-en-diferentes-partes-del-mundo-se-han-presenciado-lo-que-se-conoce-como-nahuales-estan-impactantes-las-imagenes">
+    <img alt="Nahuales EMO" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/e529a85/2147483647/strip/true/crop/1920x960+0+60/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fee%2Ffb%2F68fe9d544024b7fe8f8a538788b9%2Femo-screen-17.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/bb2004d/2147483647/strip/true/crop/1920x960+0+60/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fee%2Ffb%2F68fe9d544024b7fe8f8a538788b9%2Femo-screen-17.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/al-extremo/expediente-extremo/videos/nahuales-de-miedo-en-diferentes-partes-del-mundo-se-han-presenciado-lo-que-se-conoce-como-nahuales-estan-impactantes-las-imagenes">¡Nahuales de miedo! En diferentes partes del mundo se han presenciado lo que se conoce como nahuales. ¡Están impactantes las imágenes!</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/al-extremo">Al Extremo</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="LeadCarousel-items-item">
+
+
+
+                        <div class="LeadPromo">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/corazon-grupero/exclusivas/videos/en-exclusiva-ana-barbara-la-reina-grupera-revelo-varios-secretos-a-rafita-balderrama-enterate-de-todo-aqui">
+    <img alt="Ana Bárbara entrevista" width="1300" height="650"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/ca70fee/2147483647/strip/true/crop/1920x960+0+0/resize/2600x1300!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fde%2F2c%2Fba5f291f4d4482450051849a7b93%2Fcgp-screen-01-4.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/35844ab/2147483647/strip/true/crop/1920x960+0+0/resize/1300x650!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fde%2F2c%2Fba5f291f4d4482450051849a7b93%2Fcgp-screen-01-4.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="650px" width="1300px"></svg>'>
+
+</a>
+    </div>
+
+
+
+    <div class="LeadPromo-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/corazon-grupero/exclusivas/videos/en-exclusiva-ana-barbara-la-reina-grupera-revelo-varios-secretos-a-rafita-balderrama-enterate-de-todo-aqui">En exclusiva Ana Bárbara, &quot;La Reina Grupera&quot; ¡reveló varios secretos a Rafita Balderrama! Entérate de todo aquí.</a>
+    </div>
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/corazon-grupero">Corazón Grupero</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+        </ul>
+    </div>
+    <div data-blurred-list>
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/941600b/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F25%2F72%2Fdec9ca984674bdac82b4149b77e4%2Fsitio-1-3.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/299cc62/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe7%2F9b%2F5a49ebba4432a83843686b4dd6f5%2Fcredito-super-4-tv-azteca-117.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/e7f79d2/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fd8%2F30%2F53f50ff24eceae2cc7cc5e7462bf%2Fcap.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/ef0718b/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F29%2Fherreraelreality-2333451.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/35dcdf9/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F44%2Fb3%2Ff61b119d437086536b5ec3465d5e%2Fp1-1.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/cb5724e/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4b%2F48%2F79e7bcac45f492098385d86d30d3%2F767.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/d4096cc/2147483647/strip/true/crop/970x647+0+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F35%2F7f%2F1a17894442fd88241516055ab043%2F1.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/82775e7/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff5%2Fb5%2Fb28020634e389cdcc11039eec057%2Fvla-screen-03.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/e6d734e/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fff%2Fae%2F04ea3b2f434986d881cf79e87b62%2Ftus-screen-149.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/bb45dae/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff2%2F2e%2Fda91b8524f11aafea7efd3910cd7%2Flrs-screen-05.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/f85b3d9/2147483647/strip/true/crop/1590x1060+147+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4c%2Fd5%2F263064ed4102943c35d520880162%2Fanimales-astrales.png');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/6a985c6/2147483647/strip/true/crop/1620x1080+150+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fee%2Ffb%2F68fe9d544024b7fe8f8a538788b9%2Femo-screen-17.jpg');"></div>
+
+            <div data-blurredimg style="background-image: url('https://uat.tv-azteca.psdops.com/dims4/default/32a9191/2147483647/strip/true/crop/1620x1080+300+0/resize/300x200!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fde%2F2c%2Fba5f291f4d4482450051849a7b93%2Fcgp-screen-01-4.jpg');"></div>
+        </div>
+
+</section>
+
+            <div class="ContainerWAside" data-module
+
+
+>
+
+
+
+
+
+
+
+
+        <ul class="ContainerWAside-rows">
+
+                <li class="ContainerWAside-rows-item" data-modulewell>
+                    <section class="TabsProgramacion"
+    data-module
+
+
+>
+
+    <div data-module-contents>
+        <div class="TabsProgramacion-titleWrap">
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    Programación
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+                <ul class="TabsProgramacion-tabs">
+
+                        <li>
+                            <a class="TabsProgramacion-tab" href="#uno" data-tab>
+
+
+
+    <img alt="LogoAztecaUnoPNG" width="137" height="46"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/26e7f7b/2147483647/strip/true/crop/208x70+0+0/resize/274x92!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F08%2Flogoaztecaunopng-2294452.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/0247bec/2147483647/strip/true/crop/208x70+0+0/resize/137x46!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F08%2Flogoaztecaunopng-2294452.png"
+        >
+
+
+
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="TabsProgramacion-tab" href="#7" data-tab style="--moduleTextHighlightColor: #5ca907;" >
+
+
+
+    <img alt="Logo Azteca 7 Siete 2019" width="95" height="46"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/73ef566/2147483647/strip/true/crop/500x242+0+0/resize/190x92!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F20%2Flogoazteca7siete2019-2317490.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/50cd1b3/2147483647/strip/true/crop/500x242+0+0/resize/95x46!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F20%2Flogoazteca7siete2019-2317490.png"
+        >
+
+
+
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="TabsProgramacion-tab" href="#a" data-tab style="--moduleTextHighlightColor: #35007c;" >
+
+
+
+    <img alt="logo amas" width="95" height="46"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/8c673be/2147483647/strip/true/crop/144x70+0+0/resize/190x92!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2018%2F45%2Flogoamas-2268860.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/a6f38e7/2147483647/strip/true/crop/144x70+0+0/resize/95x46!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2018%2F45%2Flogoamas-2268860.png"
+        >
+
+
+
+
+                            </a>
+                        </li>
+
+                </ul>
+
+        </div>
+
+        <!-- This creates the row of tabs for navigation -->
+        <div class="TabsProgramacion-content">
+
+                <div class="TabsProgramacion-panel" id="uno" data-tab-panel data-modulewell>
+
+
+                            <section class="List4Atravez"
+  data-module
+
+
+>
+
+  <div data-module-contents>
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    Azteca Uno Te Recomienda
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+                <div class="ModuleTitle-cta">
+                    <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/">Ver más</a>
+                </div>
+
+        </h3>
+
+
+
+
+
+
+
+        <ul class="List4Atravez-items">
+
+                <li class="List4Atravez-items-item">
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando/noticias-del-dia/videos/cuanta-sensualidad-mariana-seoane-lucio-espectacular-en-la-grabacion-del-video-de-su-nuevo-sencillo-la-chismeadera">
+    <img alt="Mariana Seoane Ventaneando" width="308" height="173"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/544da3b/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F6c%2Ff4%2F292f7b8e48958c7968a7c5cfd483%2F380.jpg 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/a4e81ad/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F6c%2Ff4%2F292f7b8e48958c7968a7c5cfd483%2F380.jpg"
+        >
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando/noticias-del-dia/videos/cuanta-sensualidad-mariana-seoane-lucio-espectacular-en-la-grabacion-del-video-de-su-nuevo-sencillo-la-chismeadera">¡CUÁNTA SENSUALIDAD! Mariana Seoane lució espectacular en la grabación del video de su nuevo sencillo &#x27;La Chismeadera&#x27;.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando">Ventaneando</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/programas-te-la-juegas/videos/programa-del-16-de-agosto-antes-de-ir-al-exatlon-tono-rosique-y-los-atletas-vinieron-a-ganar-a-te-la-juegas">
+    <img alt="te la juegas programa exatlón" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/4404e92/2147483647/strip/true/crop/1920x1078+0+0/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F3b%2Fcc%2F9303f3df4af8a63f80e0b5071677%2Fcap2.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/4cf2cbd/2147483647/strip/true/crop/1920x1078+0+0/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F3b%2Fcc%2F9303f3df4af8a63f80e0b5071677%2Fcap2.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/programas-te-la-juegas/videos/programa-del-16-de-agosto-antes-de-ir-al-exatlon-tono-rosique-y-los-atletas-vinieron-a-ganar-a-te-la-juegas">Programa del 16 de agosto | Antes de ir al Exatlón, Toño Rosique y los atletas vinieron a GANAR a ¿Te La Juegas?</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <span class="Link" >¿Te La Juegas?</span>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/colaboradores-y-expertos-vla/videos/las-sillas-tambien-nos-pueden-ayudar-a-hacer-yoga-checa-estas-posiciones-que-hicieron-hoy-nuestros-conductores-en-flexiones-y-reflexiones">
+    <img alt="Yoga VLA" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/accd613/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F6f%2F8a%2Fc097e9df4ea8ac769a183e9db04e%2Fvla-screen-04.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/1fa3301/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F6f%2F8a%2Fc097e9df4ea8ac769a183e9db04e%2Fvla-screen-04.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/colaboradores-y-expertos-vla/videos/las-sillas-tambien-nos-pueden-ayudar-a-hacer-yoga-checa-estas-posiciones-que-hicieron-hoy-nuestros-conductores-en-flexiones-y-reflexiones">Las sillas también nos pueden ayudar a hacer yoga. ¡Checa estas posiciones que hicieron hoy nuestros conductores en Flexiones y Reflexiones!</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria">Venga la Alegría</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show/mas-show/videos/regreso-exatlon-y-con-el-la-gota-gorda-de-martin-farfan-ningun-atleta-quedara-a-salvo-de-sus-comentarios">
+    <img alt="La gota gorda Todo Un Show" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/1393505/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F83%2Fcf%2Fd447262540b78e5df79b280a4639%2Ftus-screen-201.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/1a24f9d/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F83%2Fcf%2Fd447262540b78e5df79b280a4639%2Ftus-screen-201.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show/mas-show/videos/regreso-exatlon-y-con-el-la-gota-gorda-de-martin-farfan-ningun-atleta-quedara-a-salvo-de-sus-comentarios">¡Regresó Exatlón y con él &#x27;La gota gorda&#x27; de Martín Farfán! Ningún atleta quedará a salvo de sus comentarios.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/todo-un-show">Todo un show</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/corazon-grupero/lo-mejor/videos/los-integrantes-de-banda-mach-nos-platicaron-sobre-su-trayectoria-artistica-y-de-los-celos-que-se-han-generado-entre-sus-colegas">
+    <img alt="entrevista Banda Mach" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/d954782/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe2%2F91%2F43dde1f7442ea64f4c2733a8ce36%2Fcgp-screen-06-3.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/8c5eb75/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe2%2F91%2F43dde1f7442ea64f4c2733a8ce36%2Fcgp-screen-06-3.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/corazon-grupero/lo-mejor/videos/los-integrantes-de-banda-mach-nos-platicaron-sobre-su-trayectoria-artistica-y-de-los-celos-que-se-han-generado-entre-sus-colegas">Los integrantes de Banda Mach nos platicaron sobre su trayectoria artística y de &quot;los celos profesionales&quot; que han generado entre sus colegas.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/corazon-grupero">Corazón Grupero</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-resolana-con-el-capi/videos/la-chicuela-jessica-mas-ramiro-fumazoni-la-chupitos-y-el-capi-jugaron-caricachupas-de-la-muerte-con-unos-shots-muy-asquerosos-como-castigo">
+    <img alt="lrs caricachupas 180819" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/0cd9766/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fa8%2F34%2Fc99341e0449cbc4f58805f4942d1%2Flrs-screen-01.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/e1273fc/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fa8%2F34%2Fc99341e0449cbc4f58805f4942d1%2Flrs-screen-01.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-resolana-con-el-capi/videos/la-chicuela-jessica-mas-ramiro-fumazoni-la-chupitos-y-el-capi-jugaron-caricachupas-de-la-muerte-con-unos-shots-muy-asquerosos-como-castigo">¡La Chicuela, Jessica Mas, Ramiro Fumazoni, La Chupitos y El Capi jugaron &#x27;Caricachupas de la Muerte&#x27; con unos shots muy asquerosos como castigo!</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/la-resolana-con-el-capi">La Resolana con el Capi</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon/batallas-1/videos/heliud-pulido-termina-por-aplastar-al-equipo-azul-continuo-con-la-buena-racha-de-los-famosos-y-le-dio-la-victoria-a-su-equipo">
+    <img alt="Exatlón 2019" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/b30453b/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F3c%2Fdf%2Fdc23ee964585bba8f718a95adbc3%2F6-1.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/a3c2e15/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F3c%2Fdf%2Fdc23ee964585bba8f718a95adbc3%2F6-1.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon/batallas-1/videos/heliud-pulido-termina-por-aplastar-al-equipo-azul-continuo-con-la-buena-racha-de-los-famosos-y-le-dio-la-victoria-a-su-equipo">¡Heliud Pulido termina por aplastar al equipo azul! Continuó con la buena racha de los Famosos y le dio la victoria a su equipo. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon">Exatlón</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos/mejores-momentos/videos/bebeshita-presencio-relaciones-toxicas-con-jeff-yamilet-dice-que-pasa-lo-mismo-en-su-relacion-con-brandon-esto-y-mas-en-el-intenso-careo-de-bebeshita-y-yami">
+    <img alt="ena careo 200819" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/a8cf664/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fcd%2F04%2F206b4e6a4039a7094eb77b7947b0%2F6-1.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/8b06bff/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fcd%2F04%2F206b4e6a4039a7094eb77b7947b0%2F6-1.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos/mejores-momentos/videos/bebeshita-presencio-relaciones-toxicas-con-jeff-yamilet-dice-que-pasa-lo-mismo-en-su-relacion-con-brandon-esto-y-mas-en-el-intenso-careo-de-bebeshita-y-yami">Bebeshita presenció relaciones tóxicas con Jeff. Yamilet dice que pasa lo mismo en su relación con Brandon. ¡Esto y más en el intenso careo de Bebeshita y Yami!</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos">Enamorándonos</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="gallery"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/galerias/fotos-un-suculento-postre-al-plato-fue-lo-que-puso-en-aprietos-a-los-cocineros-durante-el-reto-de-eliminacion">
+    <img alt="MASTERCHEF LA REVANCHA" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/03923f1/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F12%2Fe1%2F475131f54bfba2010b4123f69994%2Fsitio-1-2.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/d4dff69/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F12%2Fe1%2F475131f54bfba2010b4123f69994%2Fsitio-1-2.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/galerias/fotos-un-suculento-postre-al-plato-fue-lo-que-puso-en-aprietos-a-los-cocineros-durante-el-reto-de-eliminacion">FOTOS: Un suculento postre al plato fue lo que puso en aprietos a los cocineros durante el reto de eliminación. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef">MasterChef</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="gallery"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/galerias/fotos-un-suculento-postre-al-plato-fue-lo-que-puso-en-aprietos-a-los-cocineros-durante-el-reto-de-eliminacion">
+    <img alt="MASTERCHEF LA REVANCHA" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/03923f1/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F12%2Fe1%2F475131f54bfba2010b4123f69994%2Fsitio-1-2.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/d4dff69/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F12%2Fe1%2F475131f54bfba2010b4123f69994%2Fsitio-1-2.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/galerias/fotos-un-suculento-postre-al-plato-fue-lo-que-puso-en-aprietos-a-los-cocineros-durante-el-reto-de-eliminacion">FOTOS: Un suculento postre al plato fue lo que puso en aprietos a los cocineros durante el reto de eliminación. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef">MasterChef</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+        </ul>
+
+  </div>
+</section>
+
+
+                </div>
+
+                <div class="TabsProgramacion-panel" id="7" data-tab-panel data-modulewell
+                        data-tabcolor="#5ca907"
+                        style="--moduleTitleColor: #5ca907; --ctaBgHover1: #5ca907; --ctaBgHover2: #5ca907; --moduleTitleScheduleColor: #5ca907; --moduleTextHighlightColor: #5ca907;"
+                    >
+
+
+                            <section class="List4Atravez"
+  data-module
+
+
+>
+
+  <div data-module-contents>
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    Azteca 7 te recomienda
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+
+
+        <ul class="List4Atravez-items">
+
+                <li class="List4Atravez-items-item">
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza/capitulos/videos/capitulo-26-indomable-x-naturaleza-cucarachota-selvatica-grande-y-fea-desintegran-la-materia-fecal-de-otras-especies">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-112.jpg" width="308" height="173"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/4153969/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F57%2F20%2Fa0e1a8d84781b6ef0562efce3480%2Fcredito-super-4-tv-azteca-112.jpg 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/cb192ac/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F57%2F20%2Fa0e1a8d84781b6ef0562efce3480%2Fcredito-super-4-tv-azteca-112.jpg"
+        >
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza/capitulos/videos/capitulo-26-indomable-x-naturaleza-cucarachota-selvatica-grande-y-fea-desintegran-la-materia-fecal-de-otras-especies">Indomable X Naturaleza: ¡Cucarachota selvática, grande y fea! Desintegran la materia fecal de otras especies.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza">Indomable x Naturaleza</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central/capitulos/videos/game-central-en-nuestro-game-play-probamos-la-consola-playstation-classic-te-dejamos-lo-bueno-y-lo-malo-capitulo-18-de-agosto-2019">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-108.jpg" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/6fb0801/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F82%2F59%2F2011ce24435cbdfaff52a51c4578%2Fcredito-super-4-tv-azteca-108.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/dd57c91/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F82%2F59%2F2011ce24435cbdfaff52a51c4578%2Fcredito-super-4-tv-azteca-108.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central/capitulos/videos/game-central-en-nuestro-game-play-probamos-la-consola-playstation-classic-te-dejamos-lo-bueno-y-lo-malo-capitulo-18-de-agosto-2019">Game Central | En nuestro Game Play, probamos la consola PlayStation Classic, ¡te dejamos lo bueno y lo malo! | Capítulo 18 de agosto 2019.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central">Game Central</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central/capitulos/videos/game-central-pau-y-thrash-se-rifaron-el-gameplay-de-team-sonic-racing-y-una-super-sorpresa-de-dragon-ball-capitulo-11-de-agosto-2019">
+    <img alt="Game Central " width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/3846142/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc1%2F78%2F348e7ff54ef3857d676da8a91305%2Fkids7-21.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/fd54edf/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc1%2F78%2F348e7ff54ef3857d676da8a91305%2Fkids7-21.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central/capitulos/videos/game-central-pau-y-thrash-se-rifaron-el-gameplay-de-team-sonic-racing-y-una-super-sorpresa-de-dragon-ball-capitulo-11-de-agosto-2019">Game Central | Pau y Thrash se rifaron el gameplay de Team Sonic Racing, y una súper sorpresa de Dragon Ball. | Capítulo 11 de agosto 2019. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central">Game Central</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central/capitulos/videos/game-central-pau-y-thrash-se-rifaron-el-gameplay-de-marvel-ultimate-alliance-y-sonic-llego-a-los-archivos-capitulo-4-de-agosto-2019">
+    <img alt="Game Central " width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/742cbdc/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fcc%2F8e%2F5e0a7be74d33b4ce77e434dc5a44%2Fnsitio-7.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/016a63f/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fcc%2F8e%2F5e0a7be74d33b4ce77e434dc5a44%2Fnsitio-7.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central/capitulos/videos/game-central-pau-y-thrash-se-rifaron-el-gameplay-de-marvel-ultimate-alliance-y-sonic-llego-a-los-archivos-capitulo-4-de-agosto-2019">Game Central | Pau y Thrash se rifaron el gameplay de Marvel Ultimate Alliance, y Sonic llegó a los Archivos | Capítulo 4 de agosto 2019. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/game-central">Game Central</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza/capitulos/videos/capitulo-25-indomable-x-naturaleza-conoce-al-impresionante-tiburon-blanco-un-depredador-por-naturaleza">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-34.jpg" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/c1dd64c/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F8b%2F7e%2F825d4d42438784a4d1165667f880%2Fcredito-super-4-tv-azteca-34.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/bae2fa2/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F8b%2F7e%2F825d4d42438784a4d1165667f880%2Fcredito-super-4-tv-azteca-34.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza/capitulos/videos/capitulo-25-indomable-x-naturaleza-conoce-al-impresionante-tiburon-blanco-un-depredador-por-naturaleza">Indomable X Naturaleza: ¡Conoce al impresionante tiburón blanco! Un depredador por naturaleza. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza">Indomable x Naturaleza</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/peliculas/galerias-peliculas/videos/robert-downey-jr-intimamente-expuesto-el-actor-confeso-todo-lo-que-iron-man-3-represento-para-su-carrera-como-superheroe">
+    <img alt="Iron_Man_3" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/f05a7a8/2147483647/strip/true/crop/1920x1078+0+0/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F11%2F84%2F2d8af884452eae9b44f7b7531682%2Fironman.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/d8d0fa4/2147483647/strip/true/crop/1920x1078+0+0/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F11%2F84%2F2d8af884452eae9b44f7b7531682%2Fironman.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/peliculas/galerias-peliculas/videos/robert-downey-jr-intimamente-expuesto-el-actor-confeso-todo-lo-que-iron-man-3-represento-para-su-carrera-como-superheroe">¡Robert Downey Jr. íntimamente expuesto! El actor confesó todo lo que &quot;Iron Man 3&quot; representó para su carrera como superhéroe. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/peliculas">Películas</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/videos/videos/la-muerte-ronda-entre-nosotros-almas-perdidas-de-lunes-a-miercoles-8-30-pm-y-todos-los-jueves-extranormal">
+    <img alt="alma perdidas" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/85541d7/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F31%2Falmaperdidas-2336989.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/aaaae04/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F31%2Falmaperdidas-2336989.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/videos/videos/la-muerte-ronda-entre-nosotros-almas-perdidas-de-lunes-a-miercoles-8-30-pm-y-todos-los-jueves-extranormal">¡La muerte ronda entre nosotros! Almas perdidas de lunes a miércoles 8:30 PM, y todos los jueves Extranormal.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/series">Series</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/videos/videos/serie-de-estreno-mi-loca-tia-mick-de-lunes-a-jueves-11-30-pm-solo-por-azteca-7">
+    <img alt="mi loca tia" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/f783e5d/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F31%2Fmilocatia-2336968.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/247ca96/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F31%2Fmilocatia-2336968.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/videos/videos/serie-de-estreno-mi-loca-tia-mick-de-lunes-a-jueves-11-30-pm-solo-por-azteca-7">Serie de estreno: Mi loca tía Mick, de lunes a jueves 11:30 PM, sólo por Azteca 7.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/series">Series</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+        </ul>
+
+  </div>
+</section>
+
+
+                </div>
+
+                <div class="TabsProgramacion-panel" id="a" data-tab-panel data-modulewell
+                        data-tabcolor="#35007c"
+                        style="--moduleTitleColor: #35007c; --ctaBgHover1: #35007c; --ctaBgHover2: #35007c; --moduleTitleScheduleColor: #35007c; --moduleTextHighlightColor: #35007c;"
+                    >
+
+                </div>
+
+        </div>
+    </div>
+</section>
+                </li>
+                <li class="ContainerWAside-rows-item" data-asidemodulewell>
+
+                    <div data-module id="googleAd9413d845-4609-4782-a595-e697b890f9ee" class="GoogleDfpAd" data-slot-name='/29782907/TVAzteca/TVAzteca-home' data-slot-sizes='[[300, 600], [300, 250]]' data-slot-adSizeMap='[[[320, 0], [300, 600], [300, 250]], [[768, 0], [300, 600], [300, 250]], [[1024, 0], [300, 600], [300, 250]]]' data-targeting='["Pos",["BoxBanner"]]' data-prebidbidsjson='[{"bidder":"appnexus","params":{"placementId":16684214}},{"bidder":"smartadserver","params":{"domain":"https://prg.smartadserver.com","siteId":320836,"pageId":1142725,"formatId":79585}},{"bidder":"rubicon","params":{"accountId":"15150","siteId":"282696","zoneId":"1413194","sizes":[10,15]}}]'>
+</div>
+
+                </li>
+
+        </ul>
+
+</div>
+
+            <section class="ListEspeciales"
+  data-module
+
+    style="--moduleBackgroundColor: #000104;--moduleBackgroundImage: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('https://uat.tv-azteca.psdops.com/dims4/default/5836b0b/2147483647/strip/true/crop/2560x1920+0+0/resize/2560x1920!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2019%2F02%2Fbackmiparejapuede-2285110.jpg');" data-bgimage  data-module-dark data-promotag-hide
+
+>
+
+  <div data-module-contents>
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+
+                </div>
+
+
+                <div class="ModuleTitle-title-logo">
+
+                        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/">
+    <img alt="logoaz1-2268173.png" width="281" height="65"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/13c4d65/2147483647/strip/true/crop/303x70+0+0/resize/562x130!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc8%2F2c%2F6083b995457191ca0b8763b8072e%2Flogoaz1-2268173.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/5ba7c54/2147483647/strip/true/crop/303x70+0+0/resize/281x65!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc8%2F2c%2F6083b995457191ca0b8763b8072e%2Flogoaz1-2268173.png"
+        >
+
+</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+                <div class="ModuleTitle-cta">
+                    <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/">Ver más</a>
+                </div>
+
+        </h3>
+
+
+
+
+
+
+
+        <ul class="ListEspeciales-items">
+
+                <li class="ListEspeciales-items-item">
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/notas/el-sexto-capitulo-de-mastercheflarevancha-estuvo-lleno-de-sorpresas-y-momentos-epicos-llegaron-los-mejores-memes-de-este-capitulo-te-vas-a-reir-de-todos">
+    <img alt="MASTERCHEF LA REVANCHA" width="968" height="572"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/34efa33/2147483647/strip/true/crop/1828x1080+46+0/resize/1936x1144!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F25%2F72%2Fdec9ca984674bdac82b4149b77e4%2Fsitio-1-3.jpg 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/33e6a8d/2147483647/strip/true/crop/1828x1080+46+0/resize/968x572!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F25%2F72%2Fdec9ca984674bdac82b4149b77e4%2Fsitio-1-3.jpg"
+        >
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef/el-menu/notas/el-sexto-capitulo-de-mastercheflarevancha-estuvo-lleno-de-sorpresas-y-momentos-epicos-llegaron-los-mejores-memes-de-este-capitulo-te-vas-a-reir-de-todos">El sexto capítulo de #MasterChefLaRevancha estuvo lleno de sorpresas y momentos épicos. ¡Llegaron LOS MEJORES MEMES de este capítulo! ¡Te vas a reír de todos!</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/masterchef">MasterChef</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon/batallas-1/videos/espectacular-batalla-de-heber-gallegos-vencio-sin-problemas-y-con-amplia-ventaja-a-su-contrincante-ian-juarez">
+    <img alt="Exatlón 2019" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/43734b4/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4c%2F70%2F1aea03924563ad72f1bbdecbd900%2F4-1.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/50f2b92/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4c%2F70%2F1aea03924563ad72f1bbdecbd900%2F4-1.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon/batallas-1/videos/espectacular-batalla-de-heber-gallegos-vencio-sin-problemas-y-con-amplia-ventaja-a-su-contrincante-ian-juarez">¡Espectacular batalla de Heber Gallegos! Venció sin problemas y con amplia ventaja a su contrincante Ian Juárez. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/exatlon">Exatlón</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/lo-ultimo/videos/la-soprano-olivia-gorra-nos-habla-en-exclusiva-sobre-la-polemica-de-abuso-sexual-que-envuelve-a-placido-domingo">
+    <img alt="OLIVIA GORRA VLA" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/b72f681/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe2%2Fca%2Fea4fbe6d4bbba327a48f1851ecaa%2Fvla-screen-16.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/c5779ec/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe2%2Fca%2Fea4fbe6d4bbba327a48f1851ecaa%2Fvla-screen-16.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/lo-ultimo/videos/la-soprano-olivia-gorra-nos-habla-en-exclusiva-sobre-la-polemica-de-abuso-sexual-que-envuelve-a-placido-domingo">La soprano Olivia Gorra nos habla EN EXCLUSIVA sobre la polémica de abuso sexual que envuelve a Plácido Domingo.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria">Venga la Alegría</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos/portal-del-amor/videos/erick-tuvo-su-portal-sonado-con-ana-paula-jacky-cuestiono-al-amoroso-por-que-deja-que-la-flechada-lo-mande-ana-paula-la-puso-en-su-lugar">
+    <img alt="ena érick 200819" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/f48ac69/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F5a%2F9b%2F3e8306a14e9e845396f7df9f8de2%2F4-1.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/8e21de6/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F5a%2F9b%2F3e8306a14e9e845396f7df9f8de2%2F4-1.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos/portal-del-amor/videos/erick-tuvo-su-portal-sonado-con-ana-paula-jacky-cuestiono-al-amoroso-por-que-deja-que-la-flechada-lo-mande-ana-paula-la-puso-en-su-lugar">Érick tuvo su portal soñado con Ana Paula. Jacky cuestionó al amoroso por qué deja que la flechada lo mande. ¡Ana Paula la puso en su lugar!</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/enamorandonos">Enamorándonos</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando/noticias-del-dia/videos/no-usa-las-plataformas-digitales-julion-alvarez-cambio-su-estrategia-de-promocion-tras-ser-investigado-en-estados-unidos">
+    <img alt="Julión Álvarez Ventaneando" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/d97917e/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe6%2Fb8%2F262773b0438193487200972a0545%2F862.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/711a2f3/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fe6%2Fb8%2F262773b0438193487200972a0545%2F862.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando/noticias-del-dia/videos/no-usa-las-plataformas-digitales-julion-alvarez-cambio-su-estrategia-de-promocion-tras-ser-investigado-en-estados-unidos">¡No usa las PLATAFORMAS DIGITALES! Julión Álvarez cambió su estrategia de promoción tras ser investigado en Estados Unidos.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/ventaneando">Ventaneando</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+        </ul>
+
+  </div>
+</section>
+
+            <section class="List4Atravez"
+  data-module
+
+
+>
+
+  <div data-module-contents>
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+
+                </div>
+
+
+                <div class="ModuleTitle-title-logo">
+
+                        <span class="Link" >
+    <img alt="logo deportes" width="475" height="65"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/f213acf/2147483647/strip/true/crop/512x70+0+0/resize/950x130!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2018%2F45%2Flogodeportes-2268176.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/a0b4ae8/2147483647/strip/true/crop/512x70+0+0/resize/475x65!/quality/90/?url=https%3A%2F%2Fstatic.azteca.com%2Fimagenes%2F2018%2F45%2Flogodeportes-2268176.png"
+        >
+
+</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+
+
+        <ul class="List4Atravez-items">
+
+                <li class="List4Atravez-items-item">
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales/notas/cientificos-revelan-truco-para-tener-hijos-mas-inteligentes">
+    <img alt="KAL|0_l4f8bdy0" width="308" height="173"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/5ae6948/2147483647/strip/true/crop/1500x843+0+77/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F99%2F49%2F7cb13cc4c1ca7cd050e962fb2145%2F0 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/2f0331f/2147483647/strip/true/crop/1500x843+0+77/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F99%2F49%2F7cb13cc4c1ca7cd050e962fb2145%2F0"
+        >
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales/notas/cientificos-revelan-truco-para-tener-hijos-mas-inteligentes">Científicos revelan ‘truco’ para tener hijos más inteligentes</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales">Especiales</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales/notas/crean-biocombustible-a-partir-del-vino">
+    <img alt="KAL|1_5oy80u2l" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/a6c6f1f/2147483647/strip/true/crop/1091x613+129+0/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F63%2F0f%2Fd249c689209d7c3fcc710a9b5da2%2F0 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/e134394/2147483647/strip/true/crop/1091x613+129+0/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F63%2F0f%2Fd249c689209d7c3fcc710a9b5da2%2F0" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales/notas/crean-biocombustible-a-partir-del-vino">Crean biocombustible a partir del vino</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales">Especiales</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/salud/notas/celulares-y-tabletas-podrian-ocasionar-estrabismo">
+    <img alt="KAL|1_y9al0ovk" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/85a5529/2147483647/strip/true/crop/1254x704+0+66/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fb4%2F3d%2Fac6d82fdc2ff0d0492c36e3d0da4%2F0 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/b52a996/2147483647/strip/true/crop/1254x704+0+66/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fb4%2F3d%2Fac6d82fdc2ff0d0492c36e3d0da4%2F0" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/salud/notas/celulares-y-tabletas-podrian-ocasionar-estrabismo">Celulares y tabletas podrían ocasionar estrabismo</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/salud">Salud</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/ciudad/notas/fil-del-palacio-de-mineria-celebrara-su-edicion-numero-40">
+    <img alt="KAL|1_afm7guhi" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/d524630/2147483647/strip/true/crop/1600x899+0+84/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4e%2Ffc%2Fd80bfce6602f85ffb3cfff844530%2F0 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/2d17351/2147483647/strip/true/crop/1600x899+0+84/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4e%2Ffc%2Fd80bfce6602f85ffb3cfff844530%2F0" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/ciudad/notas/fil-del-palacio-de-mineria-celebrara-su-edicion-numero-40">FIL del Palacio de Minería celebrará su edición número 40</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/ciudad">Ciudad</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/codigos-de-familia/sinopsis-de-capitulos/notas/codigos-de-familia-capitulo-8-temp-5-series-azteca-7">
+    <img alt="Códigos de Familia, A punta de pistola, Temporada 5" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/182d49d/2147483647/strip/true/crop/1600x899+0+26/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc3%2F0d%2F12508becdcc96d967621d8320eb3%2Fcodigos-de-familia-a-punta-de-pistola-temporada-5-2058603.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/9151dea/2147483647/strip/true/crop/1600x899+0+26/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc3%2F0d%2F12508becdcc96d967621d8320eb3%2Fcodigos-de-familia-a-punta-de-pistola-temporada-5-2058603.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/codigos-de-familia/sinopsis-de-capitulos/notas/codigos-de-familia-capitulo-8-temp-5-series-azteca-7">Códigos de Familia: Capítulo 8, Temp.5 Series Azteca 7</a>
+    </div>
+
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/de-punta/notas/crean-proyecto-de-drones-para-combatir-incendios-forestales">
+    <img alt="KAL|0_ap860idz" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/e15fddd/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F6e%2Ff5%2F71ada2dd86e33595c89b050b3ba6%2F0 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/96ac411/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F6e%2Ff5%2F71ada2dd86e33595c89b050b3ba6%2F0" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/de-punta/notas/crean-proyecto-de-drones-para-combatir-incendios-forestales">Crean proyecto de drones para combatir incendios forestales</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/de-punta">De punta</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales/notas/actividad-del-popo-no-pone-en-riesgo-a-la-poblacion-carlos-valdes">
+    <img alt="KAL|1_m3z2fl8i" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/00a2ec4/2147483647/strip/true/crop/704x395+0+42/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F59%2F20%2F65f269dd3baed9d374fb5990ba01%2F0 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/17caaee/2147483647/strip/true/crop/704x395+0+42/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F59%2F20%2F65f269dd3baed9d374fb5990ba01%2F0" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales/notas/actividad-del-popo-no-pone-en-riesgo-a-la-poblacion-carlos-valdes">Actividad del ‘Popo’ no pone en riesgo a la población: Carlos Valdés</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/especiales">Especiales</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tvazteca.com/adn40/internacional/notas/atentado-en-mercado-de-bagdad-deja-al-menos-11-muertos">
+    <img alt="KAL|1_gu50l5o2" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/16b8d93/2147483647/strip/true/crop/914x513+0+22/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F34%2F91%2Ff9e352e624ea6ec13cd6aea7d02c%2F0 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/ad563f3/2147483647/strip/true/crop/914x513+0+22/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F34%2F91%2Ff9e352e624ea6ec13cd6aea7d02c%2F0" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/internacional/notas/atentado-en-mercado-de-bagdad-deja-al-menos-11-muertos">Atentado en mercado de Bagdad deja al menos 11 muertos</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tvazteca.com/adn40/internacional">Internacional</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecanoticias/seguridad-y-justicia/videos/luis-angel-n-conocido-como-el-chupas-estrada-ya-esta-detenido-estuvo-en-la-carcel-acusado-de-portacion-ilegal-de-arma-de-robo-de-vehiculo-de-posesion-de-drogas-y-fue-el-quien-presuntamente-agredio-a-nuestro-companero-juan-manuel-jimenez">
+    <img alt="Captura de pantalla 2019-08-21 a la(s) 14.32.33.png" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/7d16ebe/2147483647/strip/true/crop/957x538+0+2/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F50%2F22%2F82df3a624272ba4229f936c55501%2Fcaptura-de-pantalla-2019-08-21-a-las-14.32.33.png 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/02306ee/2147483647/strip/true/crop/957x538+0+2/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F50%2F22%2F82df3a624272ba4229f936c55501%2Fcaptura-de-pantalla-2019-08-21-a-las-14.32.33.png" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecanoticias/seguridad-y-justicia/videos/luis-angel-n-conocido-como-el-chupas-estrada-ya-esta-detenido-estuvo-en-la-carcel-acusado-de-portacion-ilegal-de-arma-de-robo-de-vehiculo-de-posesion-de-drogas-y-fue-el-quien-presuntamente-agredio-a-nuestro-companero-juan-manuel-jimenez">Luis Ángel &quot;N&quot;, conocido como &quot;El Chupas&quot; Estrada ya está detenido. Estuvo en la cárcel acusado de portación ilegal de arma, de robo de vehículo, de posesión de drogas y fue él quien presuntamente agredió a nuestro compañero Juan Manuel Jiménez </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecanoticias/seguridad-y-justicia">Seguridad y Justicia</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="List4Atravez-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/juegos/videos/uno-de-los-equipos-esta-para-llorar-esta-semana-checa-toda-la-diversion-de-este-miercoles-en-el-sin-palabras">
+    <img alt="Sin pamabras VLA" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/913075e/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F57%2F48%2F118c36084d90a3e5f4260ff016f1%2Fvla-screen-10.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/fef410d/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F57%2F48%2F118c36084d90a3e5f4260ff016f1%2Fvla-screen-10.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria/juegos/videos/uno-de-los-equipos-esta-para-llorar-esta-semana-checa-toda-la-diversion-de-este-miercoles-en-el-sin-palabras">¡Uno de los equipos está PARA LLORAR esta semana! ¡Checa toda la diversión de este miércoles en el Sin Palabras!</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/aztecauno/venga-la-alegria">Venga la Alegría</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+        </ul>
+
+  </div>
+</section>
+
+            <section class="ListEspeciales"
+  data-module
+
+    style="--moduleBackgroundColor: #1f242f;--moduleBackgroundImage: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url('https://uat.tv-azteca.psdops.com/dims4/default/c417d23/2147483647/strip/true/crop/2560x1920+0+0/resize/2560x1920!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Ff6%2F22%2F276b5db048828af8261665547ab1%2Fback-principal-2.jpg');" data-bgimage  data-module-dark data-promotag-hide
+
+>
+
+  <div data-module-contents>
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+
+                <div class="ModuleTitle-title-logo">
+
+                        <span class="Link" >
+    <img alt="logoaz7-2268174.png" width="300" height="65"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/57a4d03/2147483647/strip/true/crop/323x70+0+0/resize/600x130!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fd3%2F9c%2F7b43ac8a4dc7a38f7694f5930835%2Flogoaz7-2268174.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/e363c68/2147483647/strip/true/crop/323x70+0+0/resize/300x65!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fd3%2F9c%2F7b43ac8a4dc7a38f7694f5930835%2Flogoaz7-2268174.png"
+        >
+
+</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+
+
+        <ul class="ListEspeciales-items">
+
+                <li class="ListEspeciales-items-item">
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras/lo-impactante/videos/rosario-conoce-y-enfrenta-a-su-padre-le-reprocha-por-todo-el-dano-que-le-ha-hecho-por-dejarla-desamparada">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-118.jpg" width="968" height="572"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/cd7b6de/2147483647/strip/true/crop/1828x1080+46+0/resize/1936x1144!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4f%2Fb3%2F6aee9e28458fb45e6ba6b6ef126e%2Fcredito-super-4-tv-azteca-118.jpg 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/8b83fdc/2147483647/strip/true/crop/1828x1080+46+0/resize/968x572!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F4f%2Fb3%2F6aee9e28458fb45e6ba6b6ef126e%2Fcredito-super-4-tv-azteca-118.jpg"
+        >
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras/lo-impactante/videos/rosario-conoce-y-enfrenta-a-su-padre-le-reprocha-por-todo-el-dano-que-le-ha-hecho-por-dejarla-desamparada">Rosario conoce y enfrenta a su padre, le reprocha por todo el daño que le ha hecho, ¡por dejarla desamparada! </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras">Rosario Tijeras</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras/lo-impactante/videos/arteaga-recuerda-la-infidelidad-de-su-ex-esposa-andrea-despues-de-recibir-una-llamada-de-su-supuesta-hija">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-119.jpg" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/94fdb51/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F19%2Fcb%2F2cb86e8f4abf99e4fab415a1b7fc%2Fcredito-super-4-tv-azteca-119.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/dc0cfcc/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F19%2Fcb%2F2cb86e8f4abf99e4fab415a1b7fc%2Fcredito-super-4-tv-azteca-119.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras/lo-impactante/videos/arteaga-recuerda-la-infidelidad-de-su-ex-esposa-andrea-despues-de-recibir-una-llamada-de-su-supuesta-hija">Arteaga recuerda la infidelidad de su ex esposa Andrea después de recibir una llamada de su supuesta hija. </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/rosario-tijeras">Rosario Tijeras</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/kidsiete/videos/pocoyo-que-susto-un-nuevo-juego-le-pone-a-todos-los-pelos-de-punta-pocoyo-es-un-nino-muy-travieso">
+    <img alt="Pocoyo que susto" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/2f56457/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fb0%2F40%2F4a33c0c048699c14f332a24f2722%2Fkids7-30.png 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/af13b5e/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fb0%2F40%2F4a33c0c048699c14f332a24f2722%2Fkids7-30.png" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/kidsiete/videos/pocoyo-que-susto-un-nuevo-juego-le-pone-a-todos-los-pelos-de-punta-pocoyo-es-un-nino-muy-travieso">Pocoyo: ¡Qué Susto! | Un nuevo juego le pone a todos los pelos de punta. ¡Pocoyo es un niño muy travieso! </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/kidsiete">Kidsiete</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="video"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza/capitulos/videos/capitulo-26-indomable-x-naturaleza-cucarachota-selvatica-grande-y-fea-desintegran-la-materia-fecal-de-otras-especies">
+    <img alt="Crédito_ Súper 4 _ Tv Azteca-112.jpg" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/4153969/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F57%2F20%2Fa0e1a8d84781b6ef0562efce3480%2Fcredito-super-4-tv-azteca-112.jpg 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/cb192ac/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F57%2F20%2Fa0e1a8d84781b6ef0562efce3480%2Fcredito-super-4-tv-azteca-112.jpg" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza/capitulos/videos/capitulo-26-indomable-x-naturaleza-cucarachota-selvatica-grande-y-fea-desintegran-la-materia-fecal-de-otras-especies">Indomable X Naturaleza: ¡Cucarachota selvática, grande y fea! Desintegran la materia fecal de otras especies.</a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/indomable-x-naturaleza">Indomable x Naturaleza</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+                <li class="ListEspeciales-items-item">
+
+
+
+
+<div class="Promo1">
+
+    <div class="Promo-media">
+        <div data-type-icon="article"></div>
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/que-tan-monstruoso-eres-descubre-si-tienes-talento-para-entrar-a-la-industria-de-los-sustos-y-las-pesadillas-junto-a-sulli-y-mike-wazowski">
+    <img alt="Monsters inc" width="308" height="173"
+            class="Image lazyload" data-srcset="https://uat.tv-azteca.psdops.com/dims4/default/834eb35/2147483647/strip/true/crop/1920x1078+0+1/resize/616x346!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F7f%2F7f%2Ffff61760414f86fb4dd5a9203ba1%2Fkids7-29.png 2x"data-src="https://uat.tv-azteca.psdops.com/dims4/default/9dfc3f7/2147483647/strip/true/crop/1920x1078+0+1/resize/308x173!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2F7f%2F7f%2Ffff61760414f86fb4dd5a9203ba1%2Fkids7-29.png" src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="173px" width="308px"></svg>'>
+
+</a>
+    </div>
+
+
+    <div class="Promo1-info">
+
+    <div class="Promo-title">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/que-tan-monstruoso-eres-descubre-si-tienes-talento-para-entrar-a-la-industria-de-los-sustos-y-las-pesadillas-junto-a-sulli-y-mike-wazowski">¿Qué tan monstruoso eres? ¡Descubre si tienes talento para entrar a la industria de los sustos y las pesadillas junto a Sulli y Mike Wazowski! </a>
+    </div>
+
+
+
+
+
+    <div class="Promo-category">
+        <a class="Link" href="https://uat.tv-azteca.psdops.com/azteca7/peliculas">Películas</a>
+    </div>
+
+
+    </div>
+</div>
+
+
+
+
+                </li>
+
+        </ul>
+
+  </div>
+</section>
+
+    </div>
+
+
+
+
+
+
+            </article>
+
+
+        </main>
+    </div>
+
+
+
+    <footer class="Page-footer" itemscope itemtype="https://schema.org/WPFooter">
+
+
+
+            <div class="Page-footerLogo"><a href="/" target="_blank">
+    <picture>
+
+            <source width="560"
+                height="93"
+                srcset="https://uat.tv-azteca.psdops.com/dims4/default/de419e2/2147483647/strip/true/crop/512x85+0+0/resize/1120x186!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fae%2F40%2F5181207143ccb888590b5f4cfd38%2Flogo-tvaz-horizontal.png 2x"
+                media="(min-width: 1023px)" />
+
+        <img class="PageLogo-image" src="https://uat.tv-azteca.psdops.com/dims4/default/272899c/2147483647/strip/true/crop/512x85+0+0/resize/560x93!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fae%2F40%2F5181207143ccb888590b5f4cfd38%2Flogo-tvaz-horizontal.png" />
+
+    </picture>
+</a>
+</div>
+
+
+
+
+
+
+
+        <div class="Page-footerContent"><div class="FooterColumns">
+
+        <ul class="FooterColumns-columns">
+
+                <li class="FooterColumns-columns-item">
+    <div class="FooterColumn-items">
+
+            <div class="ListFooterColumn">
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    VISITA TAMBIÉN
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+    <ul class="ListFooterColumn-items">
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="http://www.tvazteca.com/">TV Azteca</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.aztecauno.com/">Azteca Uno</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.azteca7.com/">Azteca Siete</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="http://www.aztecanoticias.com.mx/">Azteca Noticias</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="http://www.aztecadeportes.com/">Azteca Deportes</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.adn40.mx/">Adn40</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.amastv.com/">a+ 7.2</a>
+            </li>
+
+    </ul>
+
+
+</div>
+
+    </div>
+
+</li>
+
+                <li class="FooterColumns-columns-item">
+    <div class="FooterColumn-items">
+
+            <div class="ListFooterColumn">
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    OTROS SITIOS
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+    <ul class="ListFooterColumn-items">
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.tvazteca.com/aztecasenales">Señales</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.tvazteca.com/politicas.html">Políticas</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.datospersonalesgs.com.mx/DerechosARCO/"> Derechos</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="http://www.irtvazteca.com"> Inversionistas</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://static.azteca.com/defensorAudienciaTVAzteca.html"> Defensor de Audiencia</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.tvazteca.com/descargas/TVAZTECACodigodeEtica.pdf">Código de Ética</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="http://www.promoespacio.com.mx/PE/index.html">Promo Espacio</a>
+            </li>
+
+    </ul>
+
+
+</div>
+
+    </div>
+
+</li>
+
+                <li class="FooterColumns-columns-item">
+    <div class="FooterColumn-items">
+
+            <div class="ListFooterColumn">
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    GRUPO SALINAS
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+    <ul class="ListFooterColumn-items">
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.bancoazteca.com/">Banco Azteca</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.elektra.com.mx/"> Elektra</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="http://www.italika.mx/"> Italika</a>
+            </li>
+
+            <li class="ListFooterColumn-items-item">
+              <a class="Link" href="https://www.totalplay.com.mx/"> TotalPlay</a>
+            </li>
+
+    </ul>
+
+
+</div>
+
+    </div>
+
+</li>
+
+                <li class="FooterColumns-columns-item">
+    <div class="FooterColumn-items">
+
+            <div class="ListFooterColumn">
+
+
+        <h3 class="ModuleTitle">
+            <div class="ModuleTitle-title">
+
+                <div class="ModuleTitle-title-text">
+                    Contacto
+                </div>
+
+
+            </div>
+
+
+            <div class="ModuleTitle-extra"></div>
+
+
+            <div class="ModuleTitle-paginators"></div>
+
+
+        </h3>
+
+
+
+
+
+    <ul class="ListFooterColumn-items">
+
+            <li class="ListFooterColumn-items-item">
+              <div class="RichTextModule" data-module data-restrictheight>
+
+
+        <p>Periférico Sur 4121,<br>Col. Fuentes Del Pedregal, C.P. 14141,<br>Ciudad De México, México.</p><p>contacto@tvazteca.com<br>55<span class="Enhancement"><span class="Enhancement-item"><a class="Link" href="tel:1720.1313" target="_blank">1720.1313</a></span></span> | Conmutador</p>
+
+</div>
+            </li>
+
+    </ul>
+
+
+</div>
+
+    </div>
+
+</li>
+
+        </ul>
+
+</div>
+</div>
+
+
+    <div class="Page-footer-bottom">
+
+    <div class="Page-social"><div class="SocialBar">
+    <h2 class="SocialBar-heading">headingText</h2>
+
+        <ul class="SocialBar-items">
+
+                <li class="SocialBar-items-item"><a class="SocialLink" href="https://twitter.com/Azteca/" target="_blank" data-social-service="twitter"><span class="SocialLink-text">Azteca/</span></a>
+</li>
+
+                <li class="SocialBar-items-item"><a class="SocialLink" href="https://www.instagram.com/azteca//" target="_blank" data-social-service="instagram"><span class="SocialLink-text">azteca/</span></a>
+</li>
+
+                <li class="SocialBar-items-item"><a class="SocialLink" href="https://www.youtube.com/user/tvazteca" target="_blank" data-social-service="youtube"><span class="SocialLink-text">user/tvazteca</span></a>
+</li>
+
+                <li class="SocialBar-items-item"><a class="SocialLink" href="https://www.facebook.com/azteca/" target="_blank" data-social-service="facebook"><span class="SocialLink-text">azteca/</span></a>
+</li>
+
+                <li class="SocialBar-items-item"><a class="SocialLink" href="https://www.linkedin.com/company/company/tv-azteca/" target="_blank" data-social-service="linkedin"><span class="SocialLink-text">company/tv-azteca/</span></a>
+</li>
+
+        </ul>
+
+</div>
+</div>
+
+
+
+    <div class="Page-partners">
+
+    <img alt="download (8).png" width="410" height="65"
+            class="Image diligent" srcset="https://uat.tv-azteca.psdops.com/dims4/default/9cba68a/2147483647/strip/true/crop/284x45+0+0/resize/820x130!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc5%2F16%2Fca19254945a4b6bc727b079ec796%2Fdownload-8.png 2x"src="https://uat.tv-azteca.psdops.com/dims4/default/293b39c/2147483647/strip/true/crop/284x45+0+0/resize/410x65!/quality/90/?url=https%3A%2F%2Ftv-azteca-brightspot.s3.amazonaws.com%2Fc5%2F16%2Fca19254945a4b6bc727b079ec796%2Fdownload-8.png"
+        >
+
+
+    </div>
+
+
+
+    <div class="Page-disclaimer">TV Azteca, M.R. &amp; ©, TV Azteca, S.A.B. de C.V. Todos los derechos reservados, 2019.<br>Queda prohibida la reproducción total o parcial sin la autorización previa, expresa y por escrito de su titular.</div>
+
+
+    </div>
+</footer>
+
+    <noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2JL7W7" height="0" width="0"
+          style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+    <a
+    data-tag="adrenalineTag" id="adlneF1Scr"
+    data-adtag="https://pubads.g.doubleclick.net/gampad/ads?sz=400x220&iu=/29782907/TVAzteca/TVAzteca-home&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=https://uat.tv-azteca.psdops.com/&description_url=https://uat.tv-azteca.psdops.com/&correlator=1569605092&vpos=preroll&ad_rule=0"
+    data-script="//adlne.com/azteca/creatives/toaster/adlnev2-toast-min.js"
+    data-windowobj-name="adlneToasterOpt"
+    data-windowobj-value='{"mute": true, "skip": true, "left": false}'>&nbsp;</a>
+
+</body>
+
+
+</html>
