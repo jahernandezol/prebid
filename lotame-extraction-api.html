@@ -13,8 +13,9 @@
 var segments = [];
 if (typeof(mmkauds) != 'undefined'){
        for (var cci = 0; cci < mmkauds.Profile.Audiences.Audience.length; cci++){
-           if (cci > 0)
-           segments.push(mmkauds.Profile.Audiences.Audience[cci].abbr)
+           if (cci >= 0){
+            segments.push(mmkauds.Profile.Audiences.Audience[cci].abbr)
+           }
        }
 }
 
