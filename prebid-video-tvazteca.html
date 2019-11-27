@@ -58,7 +58,24 @@ pbjs.que = pbjs.que || [];
 
 window.googletag = window.googletag || {cmd: []};
   googletag.cmd.push(function() {
-    googletag.defineSlot('/29782907/video-outstream-qa', ['fluid', [300,250],[390, 240],[1,1]], 'div-gpt-ad-1574875921748-0').addService(googletag.pubads());
+
+       // Define a size mapping object. The first parameter to addSize is
+   // a viewport size, while the second is a list of allowed ad sizes.
+   var mapping = googletag.sizeMapping().
+
+    // Accepts both common mobile banner formats
+    addSize([320, 400], [[390, 240], [1, 1]]). 
+        
+    // Landscape tablet 
+    addSize([750, 200], [[640, 360], [1, 1]]). 
+
+    // Desktop
+    addSize([1050, 200],[[640, 360], [1, 1]]).build();
+
+    googletag.defineSlot('/29782907/video-outstream-qa', ['fluid', [640, 360],[1,1]], 'div-gpt-ad-1574875921748-0').
+    defineSizeMapping(mapping).
+    addService(googletag.pubads());
+    
     googletag.pubads().disableInitialLoad();
     googletag.pubads().enableSingleRequest();
     googletag.enableServices();
