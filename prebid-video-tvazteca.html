@@ -1,0 +1,73 @@
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script async src="https://tvazteca.brightspotcdn.com/resource/0000016b-0aa3-d497-abff-dfa761910000/static/js/prebid2.1.0.e9c062e09dc83362df07ba9a82419db8.gz.js"></script>
+
+<script>
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    var PREBID_TIMEOUT = 3000;
+
+    var adUnits = [{
+        code: 'video1',
+        mediaTypes: {
+            video: {
+                playerSize: [640, 480],
+                context: 'outstream'
+            }
+        },
+        bids: [
+            {
+                bidder: 'appnexus',
+                params: {
+                    placementId: 13232385,
+                    video: {
+                        skippable: true,
+                        playback_method: ['auto_play_sound_off']
+                    }
+                }
+            }
+        ]
+    }];
+
+    pbjs.que.push(function() {
+        pbjs.addAdUnits(adUnits);
+        pbjs.requestBids({
+            bidsBackHandler: initAdserver
+        });
+    });
+
+    function initAdserver() {
+        if (pbjs.initAdserverSet) return;
+        pbjs.initAdserverSet = true;
+        googletag.cmd.push(function() {
+            pbjs.que.push(function() {
+                pbjs.setTargetingForGPTAsync();
+                googletag.pubads().refresh();
+            });
+        });
+    }
+
+    setTimeout(function() {
+        initAdserver();
+    }, PREBID_TIMEOUT);
+
+
+window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/29782907/video-outstream-qa', ['fluid', [300, 250],[1,1]], 'div-gpt-ad-1574875921748-0').addService(googletag.pubads());
+    googletag.pubads().disableInitialLoad();
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- /29782907/video-outstream-qa -->
+<div id='div-gpt-ad-1574875921748-0' style='width:320px; background-color:black'>
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1574875921748-0'); });
+    </script>
+  </div>
