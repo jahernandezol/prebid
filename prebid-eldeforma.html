@@ -450,13 +450,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               mediaTypes: {
                   banner: {
                       sizes: boxSizes
+                  },
+                  video:{
+                    playerSize: [300, 250],
+                    context: 'outstream'
                   }
               },
               bids: [
                   {
                       bidder: 'appnexus',
                       params: {
-                          placementId: 16734904//,
+                          placementId: 16734904,
+                          video: {
+                            skippable: true,
+                            playback_method: ['auto_play_sound_off']
+                          }
                           //keywords: { section: [''] }
                       }
                   },
